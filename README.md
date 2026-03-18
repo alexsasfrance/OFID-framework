@@ -1,6 +1,15 @@
 # Ontological Framework of Imbricated Degrees (OFID)
+## Overview
+
+The Ontological Framework of Imbricated Degrees (OFID) introduces a new perspective on quantum foundations and information accessibility. 
+
+The Ontological Framework of Imbricated Degrees (OFID) is a conceptual approach proposing that physical descriptions are fundamentally limited by degrees of inaccessibility, while global dynamics remains unitary.
+
+It aims to clarify aspects of quantum decoherence, gravitational effects, and information accessibility.
 
 This repository presents two preprints introducing and developing the Ontological Framework of Imbricated Degrees (OFID).
+
+Preprints available on Zenodo (DOI-linked):
 
 ## Main Preprint
 
@@ -17,6 +26,7 @@ Zenodo: [View on Zenodo](https://zenodo.org/record/19094656)
 ## Abstract
 
 This work introduces a conceptual framework addressing information accessibility in quantum systems. It proposes a possible constraint related to gravitationally induced decoherence and explores implications for black holes and quantum theory.
+This work contributes to the foundations of physics by proposing a conceptual framework based on limits of information accessibility.
 
 ## Keywords
 
@@ -24,4 +34,6 @@ quantum foundations
 decoherence  
 gravitational decoherence  
 black holes  
+quantum theory  
+foundations of physics  
 information accessibility  
