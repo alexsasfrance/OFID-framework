@@ -6,13 +6,13 @@ This repository presents two preprints introducing and developing the Ontologica
 
 The Ontological Framework of Imbricated Degrees (OFID)
 
-DOI: https://doi.org/10.5281/zenodo.18868538  
-Zenodo: https://zenodo.org/record/18868538
+DOI: [10.5281/zenodo.18868538](https://doi.org/10.5281/zenodo.18868538)  
+Zenodo: [View on Zenodo](https://zenodo.org/record/18868538)
 
-## OFID-G: Minimal Formalization and Testability
+## OFID-G: Minimal Formalization and Testability 
 
-DOI: https://doi.org/10.5281/zenodo.19094656  
-Zenodo: https://zenodo.org/record/19094656
+DOI: [10.5281/zenodo.19094656](https://doi.org/10.5281/zenodo.19094656)  
+Zenodo: [View on Zenodo](https://zenodo.org/record/19094656)
 
 ## Abstract
 
