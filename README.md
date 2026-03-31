@@ -9,7 +9,7 @@ Zenodo: [View on Zenodo](https://doi.org/10.5281/zenodo.19351945)
 ---
 ## 🧭 Conceptual framework
 ### Ontological Framework of Imbricated Degrees (OFID)
-### Overview
+#### Overview
 
 The Ontological Framework of Imbricated Degrees (OFID) introduces a new perspective on quantum foundations and information accessibility. 
 
@@ -21,14 +21,17 @@ This repository presents two preprints introducing and developing the Ontologica
 
 Preprints available on Zenodo (DOI-linked):
 
-### Main Preprint
-
-The Ontological Framework of Imbricated Degrees (OFID)
+#### Main Preprint
 
 📄 DOI: [10.5281/zenodo.18868538](https://doi.org/10.5281/zenodo.18868538)  
 Zenodo: [View on Zenodo](https://zenodo.org/record/18868538)
 
 ### OFID-G: Minimal Formalization and Testability 
+#### Overview
+
+A complementary formulation introducing a testable operational perspective.
+
+#### Preprint
 
 📄 DOI: [10.5281/zenodo.19094656](https://doi.org/10.5281/zenodo.19094656)  
 Zenodo: [View on Zenodo](https://zenodo.org/record/19094656)
