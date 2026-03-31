@@ -25,11 +25,9 @@ This repository presents two preprints introducing and developing the Ontologica
 📄 DOI: [10.5281/zenodo.18868538](https://doi.org/10.5281/zenodo.18868538)  
 Zenodo: [View on Zenodo](https://zenodo.org/record/18868538)
 
----
+*The following formulation extends the framework toward experimentally testable regimes*
 
-The following formulation extends the framework toward experimentally testable regimes:
 ### 🧪 OFID-G — Testable formalization
-### Minimal Formalization and Testability : OFID-G 
 #### Overview
 
 A complementary formulation introducing a testable operational perspective.
