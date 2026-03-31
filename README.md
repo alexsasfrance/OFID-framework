@@ -19,8 +19,6 @@ It aims to clarify aspects of quantum decoherence, gravitational effects, and in
 
 This repository presents two preprints introducing and developing the Ontological Framework of Imbricated Degrees (OFID).
 
-Preprints available on Zenodo (DOI-linked):
-
 #### Main Preprint
 
 📄 DOI: [10.5281/zenodo.18868538](https://doi.org/10.5281/zenodo.18868538)  
