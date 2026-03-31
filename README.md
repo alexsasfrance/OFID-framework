@@ -8,8 +8,8 @@ Zenodo: [View on Zenodo](https://doi.org/10.5281/zenodo.19351945)
 
 ---
 ## 🧭 Conceptual framework
-# Ontological Framework of Imbricated Degrees (OFID)
-## Overview
+### Ontological Framework of Imbricated Degrees (OFID)
+### Overview
 
 The Ontological Framework of Imbricated Degrees (OFID) introduces a new perspective on quantum foundations and information accessibility. 
 
@@ -21,26 +21,26 @@ This repository presents two preprints introducing and developing the Ontologica
 
 Preprints available on Zenodo (DOI-linked):
 
-## Main Preprint
+### Main Preprint
 
 The Ontological Framework of Imbricated Degrees (OFID)
 
 📄 DOI: [10.5281/zenodo.18868538](https://doi.org/10.5281/zenodo.18868538)  
 Zenodo: [View on Zenodo](https://zenodo.org/record/18868538)
 
-## OFID-G: Minimal Formalization and Testability 
+### OFID-G: Minimal Formalization and Testability 
 
 📄 DOI: [10.5281/zenodo.19094656](https://doi.org/10.5281/zenodo.19094656)  
 Zenodo: [View on Zenodo](https://zenodo.org/record/19094656)
 
 ---
 ## 📄 Conceptual summary
-## Abstract
+### Abstract
 
 This work introduces a conceptual framework addressing information accessibility in quantum systems. It proposes a possible constraint related to gravitationally induced decoherence and explores implications for black holes and quantum theory.
 This work contributes to the foundations of physics by proposing a conceptual framework based on limits of information accessibility.
 
-## Keywords
+### Keywords
 
 quantum foundations  
 decoherence  
