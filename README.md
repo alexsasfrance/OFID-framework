@@ -7,6 +7,7 @@ A concrete experimental framework aimed at probing a possible limit of quantum c
 Zenodo: [View on Zenodo](https://doi.org/10.5281/zenodo.19351945)
 
 ---
+## 🧭 Conceptual framework
 # Ontological Framework of Imbricated Degrees (OFID)
 ## Overview
 
@@ -32,6 +33,7 @@ Zenodo: [View on Zenodo](https://zenodo.org/record/18868538)
 📄 DOI: [10.5281/zenodo.19094656](https://doi.org/10.5281/zenodo.19094656)  
 Zenodo: [View on Zenodo](https://zenodo.org/record/19094656)
 
+## 📄 Conceptual summary
 ## Abstract
 
 This work introduces a conceptual framework addressing information accessibility in quantum systems. It proposes a possible constraint related to gravitationally induced decoherence and explores implications for black holes and quantum theory.
