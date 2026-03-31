@@ -25,7 +25,7 @@ This repository presents two preprints introducing and developing the Ontologica
 Zenodo: [View on Zenodo](https://zenodo.org/record/18868538)
 
 
-### Minimal Formalization and Testability :OFID-G 
+### Minimal Formalization and Testability : OFID-G 
 #### Overview
 
 A complementary formulation introducing a testable operational perspective.
