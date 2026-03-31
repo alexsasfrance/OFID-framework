@@ -3,6 +3,7 @@
 A concrete experimental framework to test a possible limit of local reconstructibility of quantum coherence, potentially linked to gravitational constraints.
 
 📄 DOI: [https://doi.org/10.5281/zenodo.19351945](https://doi.org/10.5281/zenodo.19351945)
+Zenodo: [View on Zenodo](https://doi.org/10.5281/zenodo.19351945)
 
 ---
 # Ontological Framework of Imbricated Degrees (OFID)
