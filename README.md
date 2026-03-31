@@ -1,4 +1,4 @@
-## 🚀 Testing reconstructibility of quantum coherence in mesoscopic systems
+## Testing reconstructibility of quantum coherence in mesoscopic systems
 *An experimental proposal within the OFID-G framework*
 
 A concrete experimental framework aimed at probing a possible limit of quantum coherence reconstructibility, beyond standard environmental decoherence, and potentially linked to gravitational constraints.
@@ -7,8 +7,8 @@ A concrete experimental framework aimed at probing a possible limit of quantum c
 Zenodo: [View on Zenodo](https://doi.org/10.5281/zenodo.19351945)
 
 ---
-## 🧭 Conceptual framework
-### 🧱 OFID — Conceptual foundation
+## Conceptual framework
+### OFID — Conceptual foundation
 ### Ontological Framework of Imbricated Degrees (OFID)
 #### Overview
 
@@ -27,7 +27,7 @@ Zenodo: [View on Zenodo](https://zenodo.org/record/18868538)
 
 *The following formulation extends the framework toward experimentally testable regimes*
 
-### 🧪 OFID-G — Testable formalization
+### OFID-G — Testable formalization
 #### Overview
 
 A complementary formulation introducing a testable operational perspective.
@@ -38,7 +38,7 @@ A complementary formulation introducing a testable operational perspective.
 Zenodo: [View on Zenodo](https://zenodo.org/record/19094656)
 
 ---
-## 📄 Conceptual summary
+## Conceptual summary
 ### Abstract
 
 This work introduces a conceptual framework addressing information accessibility in quantum systems. It proposes a possible constraint related to gravitationally induced decoherence and explores implications for black holes and quantum theory.
