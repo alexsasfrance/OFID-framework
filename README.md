@@ -1,6 +1,5 @@
 ## 🚀 Testing reconstructibility of quantum coherence in mesoscopic systems
 *An experimental proposal within the OFID-G framework*
-Related to the OFID framework (see below for conceptual background).
 
 A concrete experimental framework aimed at probing a possible limit of quantum coherence reconstructibility, beyond standard environmental decoherence, and potentially linked to gravitational constraints.
 
