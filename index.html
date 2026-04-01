@@ -226,6 +226,42 @@
       h2 { font-size: 1.4rem; }
       body { line-height: 1.66; }
     }
+  .cta-box {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 11px 18px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.cta-button.primary {
+  background: #1d4f91;
+  color: #ffffff;
+  border: 1px solid #1d4f91;
+}
+
+.cta-button.secondary {
+  background: #f8fafc;
+  color: #1d4f91;
+  border: 1px solid var(--line);
+}
+
+.cta-button:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+}
+  
   </style>
 </head>
 <body>
@@ -234,9 +270,9 @@
       <a href="index.html" class="nav-logo">OFID framework</a>
       <div class="nav-links">
         <a href="index.html" class="active">Experimental</a>
-        <a href="ofid-framework.html">OFID</a>
         <a href="ofid-g.html">OFID-G</a>
-      </div>
+		<a href="ofid-framework.html">OFID</a>
+       </div>
     </div>
   </nav>
 
@@ -253,9 +289,17 @@
       </p>
 
       <p>
-        The experimental text is formulated within OFID-G, itself introduced as the testable
-        operational extension of the broader OFID conceptual framework.
+        The experimental text is formulated within <a href="ofid-g.html">OFID-G</a>, itself introduced as the testable
+		operational extension of the broader <a href="ofid-framework.html">OFID conceptual framework</a>.
       </p>
+	  <div class="cta-box">
+	  <a href="https://doi.org/10.5281/zenodo.19351945" target="_blank" class="cta-button primary">
+      📄 Read the full paper (PDF)
+      </a>
+      <a href="https://doi.org/10.5281/zenodo.19351945" target="_blank" class="cta-button secondary">
+      View on Zenodo
+      </a>
+</div>
     </section>
 
     <section class="section-card">
