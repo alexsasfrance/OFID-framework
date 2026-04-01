@@ -20,11 +20,21 @@
 
   <style>
     :root {
-      --text: #222;
-      --muted: #666;
-      --line: #d9d9d9;
-      --link: #1a73e8;
-      --bg: #ffffff;
+      --bg: #f5f7fa;
+      --panel: #ffffff;
+      --soft: #f8fafc;
+      --text: #1f2937;
+      --muted: #667085;
+      --line: #d7dee7;
+      --line-soft: #e8edf3;
+      --link: #1d4f91;
+      --link-hover: #163d71;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     html {
@@ -33,60 +43,92 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(to bottom, #f8fafc 0%, #f5f7fa 100%);
       color: var(--text);
-      background: var(--bg);
-      line-height: 1.65;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.72;
     }
 
     .container {
-      max-width: 980px;
+      max-width: 960px;
       margin: 0 auto;
-      padding: 36px 24px 56px;
+      padding: 42px 20px 64px;
+    }
+
+    .hero,
+    .section-card {
+      background: var(--panel);
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 34px 34px 30px;
+      margin-bottom: 26px;
+    }
+
+    .section-card {
+      padding: 30px 34px;
+      margin-top: 26px;
+    }
+
+    h1, h2, h3, h4 {
+      margin-top: 0;
+    }
+
+    h1, h2, h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: -0.01em;
+      color: #111827;
     }
 
     h1 {
-      font-size: 2.2rem;
-      line-height: 1.2;
-      margin: 0 0 10px 0;
+      font-size: 2.3rem;
+      line-height: 1.15;
+      margin-bottom: 12px;
+      max-width: 860px;
     }
 
     h2 {
-      font-size: 1.7rem;
-      margin-top: 42px;
-      margin-bottom: 14px;
-      border-top: 1px solid var(--line);
-      padding-top: 26px;
+      font-size: 1.65rem;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
     }
 
     h3 {
-      font-size: 1.25rem;
-      margin-top: 28px;
+      font-size: 1.16rem;
+      margin-top: 26px;
       margin-bottom: 8px;
     }
 
     h4 {
-      font-size: 1rem;
-      margin-top: 18px;
-      margin-bottom: 8px;
-      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8rem;
       text-transform: uppercase;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.09em;
+      color: var(--muted);
+      margin-top: 22px;
+      margin-bottom: 10px;
     }
 
     p {
-      margin: 0 0 16px 0;
+      margin: 0 0 15px 0;
+      font-size: 1rem;
     }
 
     .subtitle {
-      font-style: italic;
+      margin-bottom: 24px;
       color: var(--muted);
-      margin-bottom: 28px;
+      font-style: italic;
+      font-size: 0.98rem;
     }
 
     .lead {
-      font-size: 1.08rem;
-      margin-bottom: 22px;
+      font-size: 1.05rem;
+      max-width: 880px;
+      margin-bottom: 0;
     }
 
     a {
@@ -95,136 +137,210 @@
     }
 
     a:hover {
+      color: var(--link-hover);
       text-decoration: underline;
     }
 
-    .doi-block,
-    .preprint-block {
-      margin: 14px 0 22px 0;
-      padding-left: 2px;
+    .resource-box {
+      margin-top: 22px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    .resource-box p {
+      margin-bottom: 8px;
+      font-size: 0.97rem;
+    }
+
+    .resource-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .resource-label {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      color: #374151;
     }
 
     .note {
-      font-style: italic;
+      margin-top: 16px;
       color: var(--muted);
-      margin: 14px 0 22px 0;
+      font-style: italic;
+      font-size: 0.96rem;
+    }
+
+    .section-intro {
+      max-width: 880px;
+    }
+
+    .subsection {
+      margin-top: 28px;
+      padding-top: 2px;
     }
 
     .keywords {
-      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
     }
 
     .keywords span {
       display: inline-block;
-      margin: 0 10px 10px 0;
-      padding: 6px 10px;
+      padding: 7px 12px;
       border: 1px solid var(--line);
       border-radius: 999px;
-      font-size: 0.95rem;
-      color: #444;
-      background: #fafafa;
+      background: #fbfcfe;
+      color: #475467;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      line-height: 1.2;
     }
 
-    .section-spacer {
-      margin-top: 10px;
+    .top-rule {
+      height: 4px;
+      width: 84px;
+      border-radius: 999px;
+      background: #d9e3ef;
+      margin-bottom: 18px;
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        padding: 24px 14px 40px;
+      }
+
+      .hero,
+      .section-card {
+        padding: 22px 18px;
+      }
+
+      h1 {
+        font-size: 1.85rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      body {
+        line-height: 1.66;
+      }
     }
   </style>
 </head>
 <body>
   <main class="container">
-    <h1>Testing reconstructibility of quantum coherence in mesoscopic systems</h1>
-    <p class="subtitle">An experimental proposal within the OFID-G framework</p>
 
-    <p class="lead">
-      A concrete experimental framework aimed at probing a possible limit of quantum coherence
-      reconstructibility, beyond standard environmental decoherence, and potentially linked to
-      gravitational constraints.
-    </p>
+    <section class="hero">
+      <div class="top-rule"></div>
+      <h1>Testing reconstructibility of quantum coherence in mesoscopic systems</h1>
+      <p class="subtitle">An experimental proposal within the OFID-G framework</p>
 
-    <div class="doi-block">
-      <p>📄 DOI: <a href="https://doi.org/10.5281/zenodo.19351945">10.5281/zenodo.19351945</a></p>
-      <p>Zenodo: <a href="https://doi.org/10.5281/zenodo.19351945">View on Zenodo</a></p>
-    </div>
+      <p class="lead">
+        A concrete experimental framework aimed at probing a possible limit of quantum coherence
+        reconstructibility, beyond standard environmental decoherence, and potentially linked to
+        gravitational constraints.
+      </p>
 
-    <h2>Conceptual framework</h2>
+      <div class="resource-box">
+        <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.19351945">10.5281/zenodo.19351945</a></p>
+        <p><span class="resource-label">Zenodo:</span> <a href="https://doi.org/10.5281/zenodo.19351945">View on Zenodo</a></p>
+      </div>
+    </section>
 
-    <h3>OFID — Conceptual foundation</h3>
-    <h3>Ontological Framework of Imbricated Degrees (OFID)</h3>
+    <section class="section-card">
+      <h2>Conceptual framework</h2>
 
-    <h4>Overview</h4>
+      <div class="section-intro">
+        <h3>OFID — Conceptual foundation</h3>
+        <h3>Ontological Framework of Imbricated Degrees (OFID)</h3>
 
-    <p>
-      The Ontological Framework of Imbricated Degrees (OFID) introduces a new perspective on
-      quantum foundations and information accessibility.
-    </p>
+        <h4>Overview</h4>
 
-    <p>
-      The Ontological Framework of Imbricated Degrees (OFID) is a conceptual approach proposing
-      that physical descriptions are fundamentally limited by degrees of inaccessibility, while
-      global dynamics remains unitary.
-    </p>
+        <p>
+          The Ontological Framework of Imbricated Degrees (OFID) introduces a new perspective on
+          quantum foundations and information accessibility.
+        </p>
 
-    <p>
-      It aims to clarify aspects of quantum decoherence, gravitational effects, and information
-      accessibility.
-    </p>
+        <p>
+          The Ontological Framework of Imbricated Degrees (OFID) is a conceptual approach proposing
+          that physical descriptions are fundamentally limited by degrees of inaccessibility, while
+          global dynamics remains unitary.
+        </p>
 
-    <p>
-      This repository presents two preprints introducing and developing the Ontological Framework
-      of Imbricated Degrees (OFID).
-    </p>
+        <p>
+          It aims to clarify aspects of quantum decoherence, gravitational effects, and information
+          accessibility.
+        </p>
 
-    <h4>Main Preprint</h4>
+        <p>
+          This repository presents two preprints introducing and developing the Ontological Framework
+          of Imbricated Degrees (OFID).
+        </p>
 
-    <div class="preprint-block">
-      <p>📄 DOI: <a href="https://doi.org/10.5281/zenodo.18868538">10.5281/zenodo.18868538</a></p>
-      <p>Zenodo: <a href="https://zenodo.org/record/18868538">View on Zenodo</a></p>
-    </div>
+        <h4>Main Preprint</h4>
 
-    <p class="note">
-      The following formulation extends the framework toward experimentally testable regimes.
-    </p>
+        <div class="resource-box">
+          <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.18868538">10.5281/zenodo.18868538</a></p>
+          <p><span class="resource-label">Zenodo:</span> <a href="https://zenodo.org/record/18868538">View on Zenodo</a></p>
+        </div>
 
-    <h3>OFID-G — Testable formalization</h3>
+        <p class="note">
+          The following formulation extends the framework toward experimentally testable regimes.
+        </p>
+      </div>
 
-    <h4>Overview</h4>
-    <p>
-      A complementary formulation introducing a testable operational perspective.
-    </p>
+      <div class="subsection">
+        <h3>OFID-G — Testable formalization</h3>
 
-    <h4>Preprint</h4>
+        <h4>Overview</h4>
+        <p>
+          A complementary formulation introducing a testable operational perspective.
+        </p>
 
-    <div class="preprint-block">
-      <p>📄 DOI: <a href="https://doi.org/10.5281/zenodo.19094656">10.5281/zenodo.19094656</a></p>
-      <p>Zenodo: <a href="https://zenodo.org/record/19094656">View on Zenodo</a></p>
-    </div>
+        <h4>Preprint</h4>
 
-    <h2>Conceptual summary</h2>
+        <div class="resource-box">
+          <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.19094656">10.5281/zenodo.19094656</a></p>
+          <p><span class="resource-label">Zenodo:</span> <a href="https://zenodo.org/record/19094656">View on Zenodo</a></p>
+        </div>
+      </div>
+    </section>
 
-    <h3>Abstract</h3>
+    <section class="section-card">
+      <h2>Conceptual summary</h2>
 
-    <p>
-      This work introduces a conceptual framework addressing information accessibility in quantum
-      systems. It proposes a possible constraint related to gravitationally induced decoherence
-      and explores implications for black holes and quantum theory.
-    </p>
+      <h3>Abstract</h3>
 
-    <p>
-      This work contributes to the foundations of physics by proposing a conceptual framework
-      based on limits of information accessibility.
-    </p>
+      <div class="section-intro">
+        <p>
+          This work introduces a conceptual framework addressing information accessibility in quantum
+          systems. It proposes a possible constraint related to gravitationally induced decoherence
+          and explores implications for black holes and quantum theory.
+        </p>
 
-    <h3>Keywords</h3>
+        <p>
+          This work contributes to the foundations of physics by proposing a conceptual framework
+          based on limits of information accessibility.
+        </p>
+      </div>
 
-    <div class="keywords">
-      <span>quantum foundations</span>
-      <span>decoherence</span>
-      <span>gravitational decoherence</span>
-      <span>black holes</span>
-      <span>quantum theory</span>
-      <span>foundations of physics</span>
-      <span>information accessibility</span>
-    </div>
+      <h3>Keywords</h3>
+
+      <div class="keywords">
+        <span>quantum foundations</span>
+        <span>decoherence</span>
+        <span>gravitational decoherence</span>
+        <span>black holes</span>
+        <span>quantum theory</span>
+        <span>foundations of physics</span>
+        <span>information accessibility</span>
+      </div>
+    </section>
+
   </main>
 </body>
 </html>
