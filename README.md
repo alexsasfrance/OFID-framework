@@ -1,18 +1,33 @@
-## Testing reconstructibility of quantum coherence in mesoscopic systems
+# Testing reconstructibility of quantum coherence in mesoscopic systems
+
 *An experimental proposal within the OFID-G framework*
+
+---
+
+## Project page
+
+Official project website (experimental framework, OFID-G, and OFID):
+
+https://alexsasfrance.github.io/OFID-framework/
+
+---
 
 A concrete experimental framework aimed at probing a possible limit of quantum coherence reconstructibility, beyond standard environmental decoherence, and potentially linked to gravitational constraints.
 
-📄 DOI: [10.5281/zenodo.19351945](https://doi.org/10.5281/zenodo.19351945)  
-Zenodo: [View on Zenodo](https://doi.org/10.5281/zenodo.19351945)
+📄 DOI: https://doi.org/10.5281/zenodo.19351945  
+Zenodo: https://doi.org/10.5281/zenodo.19351945
 
 ---
+
 ## Conceptual framework
+
 ### OFID — Conceptual foundation
+
 ### Ontological Framework of Imbricated Degrees (OFID)
+
 #### Overview
 
-The Ontological Framework of Imbricated Degrees (OFID) introduces a new perspective on quantum foundations and information accessibility. 
+The Ontological Framework of Imbricated Degrees (OFID) introduces a new perspective on quantum foundations and information accessibility.
 
 The Ontological Framework of Imbricated Degrees (OFID) is a conceptual approach proposing that physical descriptions are fundamentally limited by degrees of inaccessibility, while global dynamics remains unitary.
 
@@ -20,29 +35,37 @@ It aims to clarify aspects of quantum decoherence, gravitational effects, and in
 
 This repository presents two preprints introducing and developing the Ontological Framework of Imbricated Degrees (OFID).
 
-#### Main Preprint
+#### Main preprint
 
-📄 DOI: [10.5281/zenodo.18868538](https://doi.org/10.5281/zenodo.18868538)  
-Zenodo: [View on Zenodo](https://zenodo.org/record/18868538)
+📄 DOI: https://doi.org/10.5281/zenodo.18868538  
+Zenodo: https://zenodo.org/record/18868538
 
-*The following formulation extends the framework toward experimentally testable regimes*
+*The following formulation extends the framework toward experimentally testable regimes.*
+
+---
 
 ### OFID-G — Testable formalization
+
 #### Overview
 
 A complementary formulation introducing a testable operational perspective.
 
 #### Preprint
 
-📄 DOI: [10.5281/zenodo.19094656](https://doi.org/10.5281/zenodo.19094656)  
-Zenodo: [View on Zenodo](https://zenodo.org/record/19094656)
+📄 DOI: https://doi.org/10.5281/zenodo.19094656  
+Zenodo: https://zenodo.org/record/19094656
 
 ---
+
 ## Conceptual summary
+
 ### Abstract
 
 This work introduces a conceptual framework addressing information accessibility in quantum systems. It proposes a possible constraint related to gravitationally induced decoherence and explores implications for black holes and quantum theory.
+
 This work contributes to the foundations of physics by proposing a conceptual framework based on limits of information accessibility.
+
+---
 
 ### Keywords
 
@@ -52,4 +75,4 @@ gravitational decoherence
 black holes  
 quantum theory  
 foundations of physics  
-information accessibility  
+information accessibility
