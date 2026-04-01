@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>OFID – Ontological Framework of Imbricated Degrees</title>
+  <meta name="description" content="Conceptual presentation of the Ontological Framework of Imbricated Degrees (OFID), addressing information accessibility, decoherence, gravitational effects, and quantum foundations." />
+  <meta name="keywords" content="OFID, Ontological Framework of Imbricated Degrees, quantum foundations, information accessibility, decoherence, gravitational effects, black holes" />
+  <meta name="author" content="Alex Chenuaud" />
+
+  <meta property="og:title" content="OFID – Ontological Framework of Imbricated Degrees" />
+  <meta property="og:description" content="Conceptual presentation of OFID and its perspective on information accessibility in quantum systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alexsasfrance.github.io/OFID-framework/ofid-framework.html" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="OFID – Ontological Framework of Imbricated Degrees" />
+  <meta name="twitter:description" content="Conceptual presentation of OFID and its perspective on information accessibility in quantum systems." />
+
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --panel: #ffffff;
+      --soft: #f8fafc;
+      --text: #1f2937;
+      --muted: #667085;
+      --line: #d7dee7;
+      --line-soft: #e8edf3;
+      --link: #1d4f91;
+      --link-hover: #163d71;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #f8fafc 0%, #f5f7fa 100%);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.72;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 42px 20px 64px;
+    }
+    .hero, .section-card {
+      background: var(--panel);
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero { padding: 34px 34px 30px; margin-bottom: 26px; }
+    .section-card { padding: 30px 34px; margin-top: 26px; }
+    h1,h2,h3,h4 { margin-top: 0; }
+    h1,h2,h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: -0.01em;
+      color: #111827;
+    }
+    h1 { font-size: 2.2rem; line-height: 1.15; margin-bottom: 12px; max-width: 860px; }
+    h2 { font-size: 1.65rem; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+    h3 { font-size: 1.16rem; margin-top: 26px; margin-bottom: 8px; }
+    h4 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--muted);
+      margin-top: 22px;
+      margin-bottom: 10px;
+    }
+    p { margin: 0 0 15px 0; font-size: 1rem; }
+    .subtitle {
+      margin-bottom: 24px;
+      color: var(--muted);
+      font-style: italic;
+      font-size: 0.98rem;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { color: var(--link-hover); text-decoration: underline; }
+    .resource-box, .nav-box {
+      margin-top: 22px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+    .resource-box p, .nav-box p { margin-bottom: 8px; font-size: 0.97rem; }
+    .resource-box p:last-child, .nav-box p:last-child { margin-bottom: 0; }
+    .resource-label {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      color: #374151;
+    }
+    .top-rule {
+      height: 4px;
+      width: 84px;
+      border-radius: 999px;
+      background: #d9e3ef;
+      margin-bottom: 18px;
+    }
+    .keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .keywords span {
+      display: inline-block;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fbfcfe;
+      color: #475467;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+    @media (max-width: 720px) {
+      .container { padding: 24px 14px 40px; }
+      .hero, .section-card { padding: 22px 18px; }
+      h1 { font-size: 1.85rem; }
+      h2 { font-size: 1.4rem; }
+      body { line-height: 1.66; }
+    }
+  
+	.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #111827;
+  text-decoration: none;
+}
+
+.nav-links a {
+  margin-left: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--text);
+}
+  .nav-links a.active {
+  color: #111827;
+  font-weight: 600;
+}
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">OFID framework</a>
+    <div class="nav-links">
+      <a href="index.html">Experimental</a>
+      <a href="ofid-framework.html" class="active">OFID</a>
+      <a href="ofid-g.html">OFID-G</a>
+    </div>
+  </div>
+</nav>
+  <main class="container">
+    <section class="hero">
+      <div class="top-rule"></div>
+      <h1>OFID – Ontological Framework of Imbricated Degrees</h1>
+      <p class="subtitle">Conceptual foundation of the OFID framework</p>
+
+      <p>
+        The Ontological Framework of Imbricated Degrees (OFID) introduces a conceptual perspective
+        in which physical descriptions are limited by degrees of inaccessibility, while global
+        dynamics remains unitary.
+      </p>
+
+      
+    </section>
+
+    <section class="section-card">
+      <h2>Overview</h2>
+
+      <p>
+        OFID proposes that physical descriptions are fundamentally constrained by information
+        accessibility. In this perspective, limits on local description do not imply a breakdown
+        of global unitarity.
+      </p>
+
+      <p>
+        The framework is intended to clarify conceptual aspects of quantum decoherence,
+        gravitational effects, black holes, and the relation between local accessibility and
+        global dynamics.
+      </p>
+
+      <p>
+        It is not presented as a new dynamical law, but as a conceptual framework for interpreting
+        certain regimes in which local reconstructibility may become limited.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Main preprint</h2>
+
+      <div class="resource-box">
+        <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.18868538">10.5281/zenodo.18868538</a></p>
+        <p><span class="resource-label">Zenodo:</span> <a href="https://zenodo.org/record/18868538">View on Zenodo</a></p>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>Keywords</h2>
+      <div class="keywords">
+        <span>OFID</span>
+        <span>quantum foundations</span>
+        <span>information accessibility</span>
+        <span>decoherence</span>
+        <span>gravitational effects</span>
+        <span>black holes</span>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
