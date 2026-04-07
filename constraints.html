@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Phenomenological Constraints on Quantum Coherence Reconstructibility</title>
-  <meta name="description" content="Minimal phenomenological framework for testing possible structural limits to the reconstructibility of quantum coherence, in continuity with OFID-G." />
- <meta name="keywords" content="quantum coherence, reconstructibility, phenomenological constraints, decoherence limits, experimental constraints, mesoscopic quantum systems, quantum measurements, OFID-G, quantum foundations" />
+  <meta name="description" content="Minimal phenomenological framework for translating possible limits to the reconstructibility of quantum coherence into measurable experimental bounds, in continuity with OFID-G." />
+  <meta name="keywords" content="quantum coherence, reconstructibility, phenomenological constraints, experimental constraints, parameter estimation, mesoscopic quantum systems, OFID-G, quantum foundations, decoherence limits" />
   <meta name="author" content="Alex Chenuaud" />
 
   <meta property="og:title" content="Phenomenological Constraints on Quantum Coherence Reconstructibility" />
-  <meta property="og:description" content="Minimal phenomenological framework for constraining possible residual limits to quantum coherence reconstructibility." />
+  <meta property="og:description" content="Minimal phenomenological framework for translating null results into measurable constraints on residual limits to quantum coherence reconstructibility." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexsasfrance.github.io/OFID-framework/constraints.html" />
 
@@ -42,6 +42,48 @@
       color: var(--text);
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.72;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--line);
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      color: #111827;
+      text-decoration: none;
+    }
+
+    .nav-links a {
+      margin-left: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .nav-links a.active {
+      color: #111827;
+      font-weight: 600;
     }
 
     .container {
@@ -95,6 +137,16 @@
       margin-bottom: 8px;
     }
 
+    h4 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--muted);
+      margin-top: 22px;
+      margin-bottom: 10px;
+    }
+
     p {
       margin: 0 0 15px 0;
       font-size: 1rem;
@@ -117,7 +169,7 @@
       text-decoration: underline;
     }
 
-    .resource-box, .nav-box {
+    .resource-box {
       margin-top: 22px;
       background: var(--soft);
       border: 1px solid var(--line);
@@ -125,12 +177,12 @@
       padding: 14px 16px;
     }
 
-    .resource-box p, .nav-box p {
+    .resource-box p {
       margin-bottom: 8px;
       font-size: 0.97rem;
     }
 
-    .resource-box p:last-child, .nav-box p:last-child {
+    .resource-box p:last-child {
       margin-bottom: 0;
     }
 
@@ -138,14 +190,6 @@
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 600;
       color: #374151;
-    }
-
-    .top-rule {
-      height: 4px;
-      width: 84px;
-      border-radius: 999px;
-      background: #d9e3ef;
-      margin-bottom: 18px;
     }
 
     .keywords {
@@ -167,46 +211,48 @@
       line-height: 1.2;
     }
 
-    .navbar {
-      position: sticky;
-      top: 0;
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(6px);
-      border-bottom: 1px solid var(--line);
-      z-index: 100;
+    .top-rule {
+      height: 4px;
+      width: 84px;
+      border-radius: 999px;
+      background: #d9e3ef;
+      margin-bottom: 18px;
     }
 
-    .nav-container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 12px 20px;
+    .cta-box {
+      margin-top: 24px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
-    .nav-logo {
+    .cta-button {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 10px;
       font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.98rem;
       font-weight: 600;
-      color: #111827;
       text-decoration: none;
+      transition: transform 0.08s ease, box-shadow 0.08s ease;
     }
 
-    .nav-links a {
-      margin-left: 18px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.95rem;
-      color: var(--muted);
+    .cta-button.primary {
+      background: #1d4f91;
+      color: #ffffff;
+      border: 1px solid #1d4f91;
+    }
+
+    .cta-button.secondary {
+      background: #f8fafc;
+      color: #1d4f91;
+      border: 1px solid var(--line);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-1px);
       text-decoration: none;
-    }
-
-    .nav-links a:hover {
-      color: var(--text);
-    }
-
-    .nav-links a.active {
-      color: #111827;
-      font-weight: 600;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
     }
 
     @media (max-width: 720px) {
@@ -239,48 +285,121 @@
       <p class="subtitle">Minimal phenomenological extension in continuity with OFID-G</p>
 
       <p>
-        This text introduces a minimal phenomenological framework for testing possible
-        residual limitations to the reconstructibility of quantum coherence, in continuity
-        with the <a href="ofid-g.html">OFID-G formulation</a> and the
+        This page presents a minimal phenomenological framework for translating possible limits
+        to the reconstructibility of quantum coherence into measurable experimental bounds, in
+        continuity with the <a href="ofid-g.html">OFID-G formulation</a> and the
         <a href="index.html">experimental framework</a>.
       </p>
-	  
-	  <p><em>
-      Any residual limitation must be defined operationally as a deviation that persists after independent calibration of all known decoherence channels, and used to establish quantitative bounds on coherence reconstructibility.
-     </em></p>
-	   
+
+      <p><em>
+        In simple terms, this work defines how potential limits to quantum coherence reconstructibility
+        can be translated into measurable experimental constraints.
+      </em></p>
+
+      <p>
+        The problem addressed in this work is how to interpret null experimental results in the search for structural limits to quantum coherence reconstructibility, and whether such results can be translated into meaningful constraints. This framework approaches this question by introducing minimal phenomenological parametrizations that allow residual effects to be bounded using standard experimental sensitivities.
+	  </p>
+
+      <div class="cta-box">
+        <a href="https://doi.org/10.5281/zenodo.19387852" target="_blank" class="cta-button primary">
+          View the paper
+        </a>
+        <a href="https://doi.org/10.5281/zenodo.19387852" target="_blank" class="cta-button secondary">
+          View on Zenodo
+        </a>
+      </div>
     </section>
 
     <section class="section-card">
       <h2>Overview</h2>
 
       <p>
-        This work provides a minimal operational framework for translating possible residual
-        limits to quantum coherence reconstructibility into experimentally testable constraints.
+        This framework does not introduce a new dynamical model. Instead, it defines a residual loss
+        of reconstructibility as the deviation that remains after independent calibration of all known
+        environmental decoherence channels.
       </p>
 
       <p>
-        Rather than introducing a new dynamical model, it defines a residual loss of
-        reconstructibility as the deviation remaining after independent calibration of all
-        known environmental decoherence channels.
+        Its role is to provide a minimal interface between the conceptual structure of OFID-G and
+        standard methodologies of parameter estimation and sensitivity analysis in contemporary
+        quantum experiments.
       </p>
 
       <p>
-        The core objective is to make explicit how null experimental results can be interpreted
-        quantitatively, either as upper bounds on a continuous residual contribution or as lower
-        bounds on a possible transition threshold.
+        The central goal is therefore not to derive a specific microscopic mechanism, but to make
+        explicit how possible residual effects can be expressed in a minimal form that is directly
+        testable and constrainable.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Operational residual</h2>
+
+      <p>
+        The framework introduces an operational quantity representing the residual contribution that
+        remains once the expected reconstructibility in the presence of calibrated environmental
+        decoherence has been compared with the experimentally observed reconstructibility.
       </p>
 
       <p>
-        Two generic phenomenological behaviors are considered: a continuous residual contribution,
-        which may lead to an effective irreducible floor, and a threshold-like behavior,
-        corresponding to the onset of a transition beyond a critical parameter value.
+        In this sense, the residual is not a new observable added to experimental practice, but a
+        unifying representation of deviations already accessed through interferometric or state-reconstruction
+        protocols.
       </p>
 
       <p>
-        In this sense, the text does not propose a derived prediction of the underlying framework,
-        but a minimal interface between the conceptual structure of OFID-G and standard methods
-        of parameter estimation and sensitivity analysis in contemporary quantum experiments.
+        This formulation is broad enough to encompass observables such as the deviation between measured
+        and predicted covariance matrices used in mesoscopic reconstruction-based tests.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Phenomenological parametrizations</h2>
+
+      <p>
+        Two generic classes of phenomenological behavior are considered.
+      </p>
+
+      <p>
+        The first is a continuous residual contribution that is, in principle, present for all values
+        of an effective scan parameter and may lead to an effective irreducible floor in reconstructibility.
+      </p>
+
+      <p>
+        The second is a threshold-like behavior in which no residual effect is present below a critical
+        value of the scan parameter, while a finite contribution emerges above it.
+      </p>
+
+      <p>
+        These parametrizations are not presented as derived predictions of the underlying framework,
+        but as minimal experimentally testable ansätze allowing null results to be translated into
+        upper bounds on residual amplitudes or lower bounds on possible transition thresholds.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Experimental interpretation</h2>
+
+      <p>
+        The effective scan parameter is constructed from experimentally controllable quantities such as
+        mass, spatial delocalization, interrogation time, and gravitational configuration.
+      </p>
+
+      <p>
+        Existing platforms already probe complementary regions of this effective parameter space through
+        matter-wave interferometry, atomic interferometry, and optomechanical or levitated nanoparticle
+        systems.
+      </p>
+
+      <p>
+        Within this framework, null experimental results can be interpreted quantitatively either as
+        upper bounds on continuous residual contributions or as lower bounds on possible transition
+        regimes that remain beyond current experimental reach.
+      </p>
+
+      <p>
+        In this way, the framework provides a scalable bridge between conceptual hypotheses and the
+        progressive improvement of experimental sensitivity.
       </p>
     </section>
 
@@ -288,8 +407,8 @@
       <h2>Preprint</h2>
 
       <div class="resource-box">
-        <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.19387852">10.5281/zenodo.19387852</a></p>
-        <p><span class="resource-label">Zenodo:</span> <a href="https://zenodo.org/records/19387853">View on Zenodo</a></p>
+        <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.19387852" target="_blank">10.5281/zenodo.19387852</a></p>
+        <p><span class="resource-label">Zenodo:</span> <a href="https://doi.org/10.5281/zenodo.19387852" target="_blank">View on Zenodo</a></p>
       </div>
     </section>
 
@@ -299,13 +418,12 @@
         <span>quantum coherence</span>
         <span>reconstructibility</span>
         <span>phenomenological constraints</span>
+        <span>experimental constraints</span>
+        <span>parameter estimation</span>
         <span>mesoscopic quantum systems</span>
         <span>OFID-G</span>
-        <span>gravitational decoherence</span>
+        <span>decoherence limits</span>
         <span>quantum foundations</span>
-		<span>decoherence limits</span>
-        <span>experimental constraints</span>
-        <span>quantum measurements</span>
       </div>
     </section>
   </main>
