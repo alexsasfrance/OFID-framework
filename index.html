@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Testing Quantum Coherence Reconstructibility in Mesoscopic Systems (Experiment)</title>
-  <meta name="description" content="Experimental framework probing a possible limit of quantum coherence reconstructibility in mesoscopic systems, potentially linked to gravitational constraints, within the OFID-G framework." />
-  <meta name="keywords" content="quantum coherence, mesoscopic systems, quantum decoherence experiments, mesoscopic quantum experiments, gravitational decoherence, optomechanics, matter-wave interferometry, quantum experiments, coherence reconstructibility, OFID-G, OFID, quantum foundations" />
+  <title>Testing Quantum Coherence Reconstructibility in Mesoscopic Systems</title>
+  <meta name="description" content="Experimental framework for testing whether quantum coherence can always be fully reconstructed from experimentally accessible information in mesoscopic systems, within the OFID-G framework." />
+  <meta name="keywords" content="quantum coherence, reconstructibility, mesoscopic systems, quantum decoherence experiments, optomechanics, matter-wave interferometry, OFID-G, OFID, covariance matrix, state reconstruction, quantum foundations" />
   <meta name="author" content="Alex Chenuaud" />
 
-  <meta property="og:title" content="Testing Quantum Coherence Reconstructibility in Mesoscopic Systems (Experiment)" />
-  <meta property="og:description" content="Experimental framework probing a possible limit of quantum coherence reconstructibility, potentially linked to gravitational constraints, within the OFID-G framework." />
+  <meta property="og:title" content="Testing Quantum Coherence Reconstructibility in Mesoscopic Systems" />
+  <meta property="og:description" content="Experimental framework for testing possible limits to the reconstructibility of quantum coherence in mesoscopic systems within the OFID-G framework." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexsasfrance.github.io/OFID-framework/" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Testing Quantum Coherence Reconstructibility in Mesoscopic Systems (Experiment)" />
-  <meta name="twitter:description" content="Experimental framework probing a possible limit of quantum coherence reconstructibility in mesoscopic systems." />
+  <meta name="twitter:title" content="Testing Quantum Coherence Reconstructibility in Mesoscopic Systems" />
+  <meta name="twitter:description" content="Experimental framework probing whether quantum coherence can always be fully reconstructed from experimentally accessible information." />
 
   <style>
     :root {
@@ -219,6 +219,42 @@
       margin-bottom: 18px;
     }
 
+    .cta-box {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.98rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.08s ease, box-shadow 0.08s ease;
+    }
+
+    .cta-button.primary {
+      background: #1d4f91;
+      color: #ffffff;
+      border: 1px solid #1d4f91;
+    }
+
+    .cta-button.secondary {
+      background: #f8fafc;
+      color: #1d4f91;
+      border: 1px solid var(--line);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-1px);
+      text-decoration: none;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+    }
+
     @media (max-width: 720px) {
       .container { padding: 24px 14px 40px; }
       .hero, .section-card { padding: 22px 18px; }
@@ -226,42 +262,6 @@
       h2 { font-size: 1.4rem; }
       body { line-height: 1.66; }
     }
-  .cta-box {
-  margin-top: 24px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 11px 18px;
-  border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.98rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: transform 0.08s ease, box-shadow 0.08s ease;
-}
-
-.cta-button.primary {
-  background: #1d4f91;
-  color: #ffffff;
-  border: 1px solid #1d4f91;
-}
-
-.cta-button.secondary {
-  background: #f8fafc;
-  color: #1d4f91;
-  border: 1px solid var(--line);
-}
-
-.cta-button:hover {
-  transform: translateY(-1px);
-  text-decoration: none;
-  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
-}
-  
   </style>
 </head>
 <body>
@@ -269,12 +269,12 @@
     <div class="nav-container">
       <a href="index.html" class="nav-logo">OFID framework</a>
       <div class="nav-links">
-       <a href="overview.html">Overview</a>
-        <a href="index.html"class="active">Experimental</a>
+        <a href="overview.html">Overview</a>
+        <a href="index.html" class="active">Experimental</a>
         <a href="ofid-g.html">OFID-G</a>
-        <a href="constraints.html" >Constraints</a>
+        <a href="constraints.html">Constraints</a>
         <a href="ofid-framework.html">OFID</a>
-       </div>
+      </div>
     </div>
   </nav>
 
@@ -282,84 +282,137 @@
     <section class="hero">
       <div class="top-rule"></div>
       <h1>Testing Quantum Coherence Reconstructibility in Mesoscopic Systems</h1>
-      <p class="subtitle">Experimental page of the OFID framework</p>
+      <p class="subtitle">Experimental extension of the OFID-G framework</p>
 
       <p>
-        This page presents a concrete experimental framework aimed at probing a possible limit of
-        quantum coherence reconstructibility beyond standard environmental decoherence, and
-        potentially linked to gravitational constraints.
+        This page presents a concrete experimental framework for testing whether quantum coherence
+        can always be fully reconstructed from experimentally accessible information in mesoscopic systems,
+        under controlled variations of an effective gravitational configuration.
       </p>
 
       <p><em>
-        Unlike standard approaches, this test does not probe the loss of coherence, but the possibility
-        of its complete reconstruction under controlled conditions.
+        In simple terms, the proposed experiment tests whether quantum coherence, although globally preserved,
+        can always be fully reconstructed from experimentally accessible information.
       </em></p>
-	  <div class="cta-box">
-      <a href="https://zenodo.org/records/19351945/files/Testing%20Quantum%20Coherence%20Reconstructibility%20in%20Mesoscopic%20Systems.pdf" target="_blank" class="cta-button primary">
-      📄 Read the full paper (PDF)
-      </a>
-      <a href="https://doi.org/10.5281/zenodo.19351945" target="_blank" class="cta-button secondary">
-      View on Zenodo
-      </a>
+
+      <p>
+        The problem addressed here is whether all observed deviations from quantum coherence can be fully explained by environmental decoherence, or whether a residual limitation of reconstructibility may persist under controlled conditions. This approach investigates this question by introducing an experimentally accessible observable that directly tests the agreement between reconstructed and predicted quantum states under standard dynamics.
+	  </p>
+
+      <div class="cta-box">
+        <a href="https://doi.org/10.5281/zenodo.19351945" target="_blank" class="cta-button primary">
+          View the paper
+        </a>
+        <a href="https://doi.org/10.5281/zenodo.19351945" target="_blank" class="cta-button secondary">
+          View on Zenodo
+        </a>
       </div>
-
-
     </section>
 
     <section class="section-card">
-  <h2>Overview</h2>
+      <h2>Overview</h2>
 
-  <p>
-    This experimental proposal focuses on mesoscopic regimes in which the reconstructibility of
-	quantum coherence can be probed under controlled conditions, in connection with ongoing
-	quantum decoherence experiments in mesoscopic systems.
-  </p>
+      <p>
+        The experimental strategy is based on statistical state reconstruction in mesoscopic systems,
+        with particular emphasis on levitated optomechanical platforms and related configurations where
+        quantum control, isolation, and repeated measurements are experimentally accessible.
+      </p>
 
-  <p>
-    The central strategy is to independently calibrate known environmental decoherence channels,
-    verify that coherence can be restored by acting on these channels, and then vary a controlled
-    gravitational configuration while keeping the environment fixed.
-  </p>
+      <p>
+        Rather than introducing any modification of quantum dynamics, the protocol tests whether all observed
+        decoherence effects can be fully accounted for by standard environmental mechanisms after independent
+        calibration and control of the dominant channels.
+      </p>
 
-  <p>
-    In this setting, a key question is whether coherence remains fully reconstructible, or whether
-    a residual limitation persists that cannot be reabsorbed into standard decoherence mechanisms.
-  </p>
+      <p>
+        In this setting, the relevant quantity is a measurable deviation between the state reconstructed after
+        evolution and the state predicted from the reconstructed initial condition under standard quantum dynamics.
+        For near-Gaussian states, this comparison is naturally expressed in terms of covariance matrices.
+      </p>
 
-  <p>
-     In operational terms, the relevant signature would be the failure to fully restore coherence
-     under a monotonic variation of gravitational parameters alone, despite prior validation that
-     environmental decoherence can be independently controlled. Such a signature could take the form
-     of either an irreducible floor in reconstructibility, or a transition appearing under controlled
-     parameter variation.
-  </p>
+      <p>
+        The corresponding observable takes the form of a deviation between measured and predicted covariance
+        matrices. Under the null hypothesis of full reconstructibility, this deviation should remain statistically
+        compatible with zero under a monotonic scan of the effective gravitational parameter.
+      </p>
 
-</section>
+      <p>
+        By contrast, a residual, reproducible, and parameter-dependent deviation that persists after recalibration
+        and cannot be reduced to known decoherence channels would constitute the relevant experimental signature
+        of a breakdown of reconstructibility.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Operational logic</h2>
+
+      <p>
+        The protocol follows a simple logic. First, the initial state is reconstructed. Second, the system
+        evolves under controlled conditions including calibrated environmental decoherence and a tunable effective
+        gravitational configuration. Third, the final state is reconstructed from measurement data and compared
+        with the state predicted under standard dynamics.
+      </p>
+
+      <p>
+        The key issue is therefore not whether coherence is lost in a generic sense, but whether the information
+        required to reconstruct the state remains fully accessible when external parameters are varied under
+        otherwise controlled conditions.
+      </p>
+
+      <p>
+        In this perspective, the test does not seek a new decoherence law. It probes whether standard decoherence
+        modeling is operationally complete, or whether a residual limitation persists beyond the reach of
+        environmental explanation.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Expected signatures</h2>
+
+      <p>
+        Under standard quantum dynamics, once all relevant decoherence channels are calibrated, the measured
+        residual should remain compatible with zero within experimental uncertainties.
+      </p>
+
+      <p>
+        The signature of interest is therefore a residual contribution that is:
+      </p>
+
+      <p>
+        <strong>reproducible</strong>, <strong>parameter-dependent</strong>, <strong>robust under recalibration</strong>,
+        and <strong>not reducible to known environmental decoherence mechanisms</strong>.
+      </p>
+
+      <p>
+        Such a signal may appear either as a gradual departure from the predicted behavior over a region of
+        parameter space or as a more threshold-like transition. In both cases, the essential point is that it
+        remains operationally distinguishable from standard decoherence.
+      </p>
+    </section>
 
     <section class="section-card">
       <h2>Preprint</h2>
 
       <div class="resource-box">
-        <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.19351945">10.5281/zenodo.19351945</a></p>
-        <p><span class="resource-label">Zenodo:</span> <a href="https://doi.org/10.5281/zenodo.19351945">View on Zenodo</a></p>
+        <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.19351945" target="_blank">10.5281/zenodo.19351945</a></p>
+        <p><span class="resource-label">Zenodo:</span> <a href="https://doi.org/10.5281/zenodo.19351945" target="_blank">View on Zenodo</a></p>
       </div>
     </section>
 
     <section class="section-card">
       <h4>Keywords</h4>
-
       <div class="keywords">
         <span>quantum coherence</span>
-        <span>mesoscopic systems</span>
         <span>reconstructibility</span>
-        <span>gravitational decoherence</span>
+        <span>mesoscopic systems</span>
+        <span>state reconstruction</span>
+        <span>covariance matrix</span>
+        <span>optomechanics</span>
+        <span>matter-wave interferometry</span>
         <span>OFID-G</span>
         <span>OFID</span>
+        <span>quantum decoherence experiments</span>
         <span>quantum foundations</span>
-		<span>quantum decoherence experiments</span>
-		<span>mesoscopic quantum experiments</span>
-		<span>optomechanics</span>
-		<span>matter-wave interferometry</span>
       </div>
     </section>
   </main>
