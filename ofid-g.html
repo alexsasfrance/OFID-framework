@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>OFID-G: Testable Framework for Quantum Coherence Reconstructibility</title>
-  <meta name="description" content="OFID-G presents a testable operational formulation of the OFID framework, introducing an experimental perspective on possible limits of quantum coherence reconstructibility." />
- <meta name="keywords" content="OFID-G, quantum coherence, reconstructibility, coherence limits, gravitational effects, mesoscopic systems, quantum decoherence, experimental test, quantum foundations, OFID" />
+  <title>OFID-G: Operational Framework for Quantum Coherence Reconstructibility</title>
+  <meta name="description" content="OFID-G introduces an operational and testable framework for investigating whether quantum coherence may fail to remain fully reconstructible under controlled local conditions, while global unitarity is preserved." />
+  <meta name="keywords" content="OFID-G, quantum coherence, reconstructibility, non-reconstructibility, mesoscopic systems, quantum decoherence, collapse models, gravitational structure, quantum foundations, OFID" />
   <meta name="author" content="Alex Chenuaud" />
 
-  <meta property="og:title" content="OFID-G: Testable Framework for Quantum Coherence Reconstructibility" />
-  <meta property="og:description" content="Operational and testable formulation of the OFID framework, with emphasis on reconstructibility and mesoscopic regimes." />
+  <meta property="og:title" content="OFID-G: Operational Framework for Quantum Coherence Reconstructibility" />
+  <meta property="og:description" content="Operational and testable formulation of OFID-G, focused on regime-relative reconstructibility and structural limits of accessibility." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexsasfrance.github.io/OFID-framework/ofid-g.html" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="OFID-G: Testable Framework for Quantum Coherence Reconstructibility" />
-  <meta name="twitter:description" content="Operational and testable formulation of the OFID framework." />
+  <meta name="twitter:title" content="OFID-G: Operational Framework for Quantum Coherence Reconstructibility" />
+  <meta name="twitter:description" content="Operational formulation of OFID-G and its testable criterion for local reconstructibility of quantum coherence." />
 
   <style>
     :root {
@@ -32,8 +32,10 @@
       --shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
       --radius: 14px;
     }
+
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       background: linear-gradient(to bottom, #f8fafc 0%, #f5f7fa 100%);
@@ -41,64 +43,162 @@
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.72;
     }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--line);
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      color: #111827;
+      text-decoration: none;
+    }
+
+    .nav-links a {
+      margin-left: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .nav-links a.active {
+      color: #111827;
+      font-weight: 600;
+    }
+
     .container {
       max-width: 960px;
       margin: 0 auto;
       padding: 42px 20px 64px;
     }
+
     .hero, .section-card {
       background: var(--panel);
       border: 1px solid var(--line-soft);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
     }
-    .hero { padding: 34px 34px 30px; margin-bottom: 26px; }
-    .section-card { padding: 30px 34px; margin-top: 26px; }
-    h1,h2,h3,h4 { margin-top: 0; }
-    h1,h2,h3 {
+
+    .hero {
+      padding: 34px 34px 30px;
+      margin-bottom: 26px;
+    }
+
+    .section-card {
+      padding: 30px 34px;
+      margin-top: 26px;
+    }
+
+    h1, h2, h3, h4 { margin-top: 0; }
+
+    h1, h2, h3 {
       font-family: Arial, Helvetica, sans-serif;
       letter-spacing: -0.01em;
       color: #111827;
     }
-    h1 { font-size: 2.2rem; line-height: 1.15; margin-bottom: 12px; max-width: 860px; }
-    h2 { font-size: 1.65rem; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
-    h3 { font-size: 1.16rem; margin-top: 26px; margin-bottom: 8px; }
-    p { margin: 0 0 15px 0; font-size: 1rem; }
+
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.15;
+      margin-bottom: 12px;
+      max-width: 860px;
+    }
+
+    h2 {
+      font-size: 1.65rem;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 1.16rem;
+      margin-top: 26px;
+      margin-bottom: 8px;
+    }
+
+    h4 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--muted);
+      margin-top: 22px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0 0 15px 0;
+      font-size: 1rem;
+    }
+
     .subtitle {
       margin-bottom: 24px;
       color: var(--muted);
       font-style: italic;
       font-size: 0.98rem;
     }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { color: var(--link-hover); text-decoration: underline; }
-    .resource-box, .nav-box {
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    .resource-box {
       margin-top: 22px;
       background: var(--soft);
       border: 1px solid var(--line);
       border-radius: 12px;
       padding: 14px 16px;
     }
-    .resource-box p, .nav-box p { margin-bottom: 8px; font-size: 0.97rem; }
-    .resource-box p:last-child, .nav-box p:last-child { margin-bottom: 0; }
+
+    .resource-box p {
+      margin-bottom: 8px;
+      font-size: 0.97rem;
+    }
+
+    .resource-box p:last-child {
+      margin-bottom: 0;
+    }
+
     .resource-label {
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 600;
       color: #374151;
     }
-    .top-rule {
-      height: 4px;
-      width: 84px;
-      border-radius: 999px;
-      background: #d9e3ef;
-      margin-bottom: 18px;
-    }
+
     .keywords {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       margin-top: 10px;
     }
+
     .keywords span {
       display: inline-block;
       padding: 7px 12px;
@@ -110,6 +210,51 @@
       font-size: 0.9rem;
       line-height: 1.2;
     }
+
+    .top-rule {
+      height: 4px;
+      width: 84px;
+      border-radius: 999px;
+      background: #d9e3ef;
+      margin-bottom: 18px;
+    }
+
+    .cta-box {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.98rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.08s ease, box-shadow 0.08s ease;
+    }
+
+    .cta-button.primary {
+      background: #1d4f91;
+      color: #ffffff;
+      border: 1px solid #1d4f91;
+    }
+
+    .cta-button.secondary {
+      background: #f8fafc;
+      color: #1d4f91;
+      border: 1px solid var(--line);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-1px);
+      text-decoration: none;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+    }
+
     @media (max-width: 720px) {
       .container { padding: 24px 14px 40px; }
       .hero, .section-card { padding: 22px 18px; }
@@ -117,118 +262,156 @@
       h2 { font-size: 1.4rem; }
       body { line-height: 1.66; }
     }
-	.navbar {
-  position: sticky;
-  top: 0;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--line);
-  z-index: 100;
-}
-
-.nav-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 12px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-logo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  color: #111827;
-  text-decoration: none;
-}
-
-.nav-links a {
-  margin-left: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.95rem;
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.nav-links a:hover {
-  color: var(--text);
-}
-  .nav-links a.active {
-  color: #111827;
-  font-weight: 600;
-}
   </style>
 </head>
 <body>
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">OFID framework</a>
-    <div class="nav-links">
-      <a href="overview.html">Overview</a>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">OFID framework</a>
+      <div class="nav-links">
+        <a href="overview.html">Overview</a>
         <a href="index.html">Experimental</a>
-        <a href="ofid-g.html"class="active">OFID-G</a>
-        <a href="constraints.html" >Constraints</a>
+        <a href="ofid-g.html" class="active">OFID-G</a>
+        <a href="constraints.html">Constraints</a>
         <a href="ofid-framework.html">OFID</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
   <main class="container">
     <section class="hero">
       <div class="top-rule"></div>
-      <h1>OFID-G: Testable Framework for Quantum Coherence Reconstructibility</h1>
+      <h1>OFID-G: Operational Framework for Quantum Coherence Reconstructibility</h1>
       <p class="subtitle">Operational extension of the OFID framework</p>
 
       <p>
-        OFID-G introduces a testable operational perspective derived from the <a href="ofid-framework.html">OFID conceptual framework</a>, with emphasis on experimentally accessible regimes and possible limits of
-        quantum coherence reconstructibility.
+        This page presents the operational formulation of OFID-G, a framework designed to investigate
+        whether quantum coherence may fail to remain fully reconstructible within a given local regime,
+        even when global unitary evolution is preserved.
       </p>
-      
-	  <p><em>
-      The key issue is not the dynamical loss of coherence, but the existence of limits to its full reconstructibility under controlled conditions.
+
+      <p><em>
+        In simple terms, OFID-G proposes that even when quantum coherence is globally preserved,
+        there may exist regimes in which it cannot be fully reconstructed using all admissible local operations.
       </em></p>
-      
+
+      <p>
+        The problem addressed by OFID-G is whether all limitations to quantum coherence can be attributed
+        to environmental decoherence or dynamical collapse mechanisms, or whether a residual structural
+        limitation of reconstructibility may persist even under idealized control. OFID-G addresses this
+        by proposing a regime-dependent criterion distinguishing reconstructible from non-reconstructible
+        configurations without modifying global unitarity.
+      </p>
+
+      <div class="cta-box">
+        <a href="https://doi.org/10.5281/zenodo.19094656" target="_blank" class="cta-button primary">
+          View the paper
+        </a>
+        <a href="https://doi.org/10.5281/zenodo.19094656" target="_blank" class="cta-button secondary">
+          View on Zenodo
+        </a>
+      </div>
     </section>
 
     <section class="section-card">
-  <h2>Overview</h2>
+      <h2>Overview</h2>
 
-  <p>
-    OFID-G extends the OFID framework toward experimentally testable regimes by introducing an
-    operational perspective on quantum coherence reconstructibility.
-  </p>
+      <p>
+        OFID-G extends the conceptual framework of OFID toward experimentally meaningful regimes by
+        introducing a precise operational notion of local reconstructibility of quantum coherence.
+      </p>
 
-  <p>
-    It explores the possibility that, even under globally unitary dynamics and controlled
-    environmental conditions, limitations may arise at the level of local reconstructibility
-    rather than dynamical evolution.
-  </p>
+      <p>
+        The central issue is not whether coherence is dynamically destroyed, but whether it remains fully
+        reconstructible once all admissible local procedures have been taken into account under the
+        operational constraints defining a regime.
+      </p>
 
-  <p>
-    In this perspective, the relevant question is not whether coherence is dynamically destroyed,
-    but whether it remains fully reconstructible once all known decoherence channels have been
-    independently characterized and controlled.
-  </p>
+      <p>
+        In this perspective, local non-reconstructibility does not imply ontological information loss
+        or a breakdown of global unitarity. It instead refers to the possible existence of a regime-dependent
+        ceiling on reconstruction fidelity that persists even under idealized refinement of admissible
+        local operations.
+      </p>
 
-  <p>
-    If a residual limitation correlated with gravitational configuration were observed, it would
-    not indicate a breakdown of quantum theory, but rather suggest the existence of structural
-    constraints on accessibility that are not reducible to standard decoherence.
-  </p>
-  
-  <p>
-    A possible observation of such a limitation would therefore not signal a failure of quantum
-    mechanics or of decoherence theory, but rather indicate that the standard framework may be
-    incomplete at the level of accessibility, even if it remains fully valid at the dynamical level.
-  </p>
+      <p>
+        OFID-G is therefore conceptually distinct from both standard decoherence and collapse models:
+        it does not introduce a new dynamical law, but formulates a structural criterion concerning the
+        accessibility of coherence and the possible existence of non-reconstructible regimes.
+      </p>
+    </section>
 
-</section>
+    <section class="section-card">
+      <h2>Operational criterion</h2>
+
+      <p>
+        Within OFID-G, coherence is said to be locally reconstructible if there exists a physically admissible
+        local procedure allowing recovery arbitrarily close to a calibrated reference regime in which coherence
+        is controlled.
+      </p>
+
+      <p>
+        Conversely, coherence is locally non-reconstructible if no such admissible procedure exists within the
+        operational domain defining the regime, even in principle. More precisely, this means that there exists
+        a non-zero ceiling on the maximal achievable reconstruction fidelity under all admissible local procedures.
+      </p>
+
+      <p>
+        This criterion is regime-relative and structural. It is not meant to describe practical difficulty,
+        computational complexity, or incomplete laboratory control, but a limit that would persist even under
+        idealized optimization of local operations.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Differential test logic</h2>
+
+      <p>
+        OFID-G does not predict a decoherence rate. It predicts the possible existence of a regime boundary.
+      </p>
+
+      <p>
+        Its empirical structure is differential: a reconstruction protocol is first calibrated in a controlled
+        regime, then an effective gravitational parameter is varied monotonically, and one asks whether a
+        persistent reconstruction ceiling appears that correlates specifically with that parameter rather than
+        with non-gravitational technical variables.
+      </p>
+
+      <p>
+        If reconstructibility always remains achievable under admissible operations across the explored finite
+        domain, OFID-G is falsified. Conversely, a stable upper bound on reconstruction fidelity correlated with
+        the gravitational control parameter would constitute evidence for non-reconstructibility in the operational
+        sense defined here.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Conceptual position</h2>
+
+      <p>
+        OFID-G complements rather than competes with environmental decoherence. Standard decoherence explains
+        how phase information becomes effectively inaccessible through coupling to environmental degrees of freedom
+        while global unitarity is preserved.
+      </p>
+
+      <p>
+        By contrast, OFID-G asks whether a residual limit of reconstructibility may remain even after all known
+        non-gravitational decoherence channels have been independently characterized and controlled.
+      </p>
+
+      <p>
+        It is likewise distinct from collapse models such as GRW, CSL, or Diósi–Penrose-type proposals, because
+        it does not attribute the loss of coherence to a new stochastic or gravitationally induced dynamical
+        suppression. Its target is instead a structural limit of accessibility.
+      </p>
+    </section>
 
     <section class="section-card">
       <h2>Preprint</h2>
 
       <div class="resource-box">
-        <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.19094656">10.5281/zenodo.19094656</a></p>
-        <p><span class="resource-label">Zenodo:</span> <a href="https://zenodo.org/record/19094656">View on Zenodo</a></p>
+        <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.19094656" target="_blank">10.5281/zenodo.19094656</a></p>
+        <p><span class="resource-label">Zenodo:</span> <a href="https://doi.org/10.5281/zenodo.19094656" target="_blank">View on Zenodo</a></p>
       </div>
     </section>
 
@@ -238,15 +421,15 @@
         <span>OFID-G</span>
         <span>quantum coherence</span>
         <span>reconstructibility</span>
+        <span>non-reconstructibility</span>
         <span>mesoscopic systems</span>
-        <span>gravitational decoherence</span>
-        <span>quantum foundations</span>
-		<span>coherence limits</span>
-        <span>experimental test</span>
         <span>quantum decoherence</span>
+        <span>collapse models</span>
+        <span>gravitational structure</span>
+        <span>quantum foundations</span>
+        <span>OFID</span>
       </div>
     </section>
   </main>
 </body>
-
 </html>
