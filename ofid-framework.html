@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>OFID: Ontological Framework of Imbricated Degrees in Quantum Systems</title>
-  <meta name="description" content="Conceptual presentation of the Ontological Framework of Imbricated Degrees (OFID), addressing information accessibility, decoherence, gravitational effects, and quantum foundations." />
-  <meta name="keywords" content="OFID, ontological framework, imbricated degrees, quantum foundations, information accessibility, decoherence, quantum gravity, black holes, structural limits, quantum theory" />
+  <title>OFID: Ontological Framework of Imbricated Degrees</title>
+  <meta name="description" content="Conceptual presentation of the Ontological Framework of Imbricated Degrees (OFID), a minimal ontological framework proposing that physical reality may include structurally inaccessible degrees of freedom beyond locally accessible descriptions." />
+  <meta name="keywords" content="OFID, ontological framework, imbricated degrees, information accessibility, reconstructibility, quantum foundations, decoherence, black holes, structural limits, quantum gravity" />
   <meta name="author" content="Alex Chenuaud" />
 
-  <meta property="og:title" content="OFID: Ontological Framework of Imbricated Degrees in Quantum Systems" />
-  <meta property="og:description" content="Conceptual presentation of OFID and its perspective on information accessibility in quantum systems." />
+  <meta property="og:title" content="OFID: Ontological Framework of Imbricated Degrees" />
+  <meta property="og:description" content="Conceptual foundation of OFID and its perspective on accessibility, reconstructibility, and global physical reality." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexsasfrance.github.io/OFID-framework/ofid-framework.html" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="OFID: Ontological Framework of Imbricated Degrees in Quantum Systems" />
-  <meta name="twitter:description" content="Conceptual presentation of OFID and its perspective on information accessibility in quantum systems." />
+  <meta name="twitter:title" content="OFID: Ontological Framework of Imbricated Degrees" />
+  <meta name="twitter:description" content="Conceptual foundation of OFID and its perspective on accessibility and physical reality." />
 
   <style>
     :root {
@@ -32,8 +32,10 @@
       --shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
       --radius: 14px;
     }
+
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       background: linear-gradient(to bottom, #f8fafc 0%, #f5f7fa 100%);
@@ -41,28 +43,100 @@
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.72;
     }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--line);
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      color: #111827;
+      text-decoration: none;
+    }
+
+    .nav-links a {
+      margin-left: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .nav-links a.active {
+      color: #111827;
+      font-weight: 600;
+    }
+
     .container {
       max-width: 960px;
       margin: 0 auto;
       padding: 42px 20px 64px;
     }
+
     .hero, .section-card {
       background: var(--panel);
       border: 1px solid var(--line-soft);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
     }
-    .hero { padding: 34px 34px 30px; margin-bottom: 26px; }
-    .section-card { padding: 30px 34px; margin-top: 26px; }
-    h1,h2,h3,h4 { margin-top: 0; }
-    h1,h2,h3 {
+
+    .hero {
+      padding: 34px 34px 30px;
+      margin-bottom: 26px;
+    }
+
+    .section-card {
+      padding: 30px 34px;
+      margin-top: 26px;
+    }
+
+    h1, h2, h3, h4 { margin-top: 0; }
+
+    h1, h2, h3 {
       font-family: Arial, Helvetica, sans-serif;
       letter-spacing: -0.01em;
       color: #111827;
     }
-    h1 { font-size: 2.2rem; line-height: 1.15; margin-bottom: 12px; max-width: 860px; }
-    h2 { font-size: 1.65rem; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
-    h3 { font-size: 1.16rem; margin-top: 26px; margin-bottom: 8px; }
+
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.15;
+      margin-bottom: 12px;
+      max-width: 860px;
+    }
+
+    h2 {
+      font-size: 1.65rem;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h3 {
+      font-size: 1.16rem;
+      margin-top: 26px;
+      margin-bottom: 8px;
+    }
+
     h4 {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 0.8rem;
@@ -72,42 +146,59 @@
       margin-top: 22px;
       margin-bottom: 10px;
     }
-    p { margin: 0 0 15px 0; font-size: 1rem; }
+
+    p {
+      margin: 0 0 15px 0;
+      font-size: 1rem;
+    }
+
     .subtitle {
       margin-bottom: 24px;
       color: var(--muted);
       font-style: italic;
       font-size: 0.98rem;
     }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { color: var(--link-hover); text-decoration: underline; }
-    .resource-box, .nav-box {
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    .resource-box {
       margin-top: 22px;
       background: var(--soft);
       border: 1px solid var(--line);
       border-radius: 12px;
       padding: 14px 16px;
     }
-    .resource-box p, .nav-box p { margin-bottom: 8px; font-size: 0.97rem; }
-    .resource-box p:last-child, .nav-box p:last-child { margin-bottom: 0; }
+
+    .resource-box p {
+      margin-bottom: 8px;
+      font-size: 0.97rem;
+    }
+
+    .resource-box p:last-child {
+      margin-bottom: 0;
+    }
+
     .resource-label {
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 600;
       color: #374151;
     }
-    .top-rule {
-      height: 4px;
-      width: 84px;
-      border-radius: 999px;
-      background: #d9e3ef;
-      margin-bottom: 18px;
-    }
+
     .keywords {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       margin-top: 10px;
     }
+
     .keywords span {
       display: inline-block;
       padding: 7px 12px;
@@ -119,6 +210,51 @@
       font-size: 0.9rem;
       line-height: 1.2;
     }
+
+    .top-rule {
+      height: 4px;
+      width: 84px;
+      border-radius: 999px;
+      background: #d9e3ef;
+      margin-bottom: 18px;
+    }
+
+    .cta-box {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.98rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.08s ease, box-shadow 0.08s ease;
+    }
+
+    .cta-button.primary {
+      background: #1d4f91;
+      color: #ffffff;
+      border: 1px solid #1d4f91;
+    }
+
+    .cta-button.secondary {
+      background: #f8fafc;
+      color: #1d4f91;
+      border: 1px solid var(--line);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-1px);
+      text-decoration: none;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+    }
+
     @media (max-width: 720px) {
       .container { padding: 24px 14px 40px; }
       .hero, .section-card { padding: 22px 18px; }
@@ -126,62 +262,22 @@
       h2 { font-size: 1.4rem; }
       body { line-height: 1.66; }
     }
-  
-	.navbar {
-  position: sticky;
-  top: 0;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--line);
-  z-index: 100;
-}
-
-.nav-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 12px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-logo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  color: #111827;
-  text-decoration: none;
-}
-
-.nav-links a {
-  margin-left: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.95rem;
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.nav-links a:hover {
-  color: var(--text);
-}
-  .nav-links a.active {
-  color: #111827;
-  font-weight: 600;
-}
   </style>
 </head>
 <body>
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">OFID framework</a>
-    <div class="nav-links">
-      <a href="overview.html">Overview</a>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">OFID framework</a>
+      <div class="nav-links">
+        <a href="overview.html">Overview</a>
         <a href="index.html">Experimental</a>
         <a href="ofid-g.html">OFID-G</a>
-        <a href="constraints.html" >Constraints</a>
-        <a href="ofid-framework.html"class="active">OFID</a>
+        <a href="constraints.html">Constraints</a>
+        <a href="ofid-framework.html" class="active">OFID</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
   <main class="container">
     <section class="hero">
       <div class="top-rule"></div>
@@ -189,54 +285,127 @@
       <p class="subtitle">Conceptual foundation of the OFID framework</p>
 
       <p>
-        The Ontological Framework of Imbricated Degrees (OFID) introduces a conceptual perspective
-        in which physical descriptions are limited by degrees of inaccessibility, while global
-        dynamics remains unitary.
+        This page presents OFID as a minimal ontological framework designed to clarify the relation
+        between global physical reality and regime-dependent local accessibility, without modifying
+        the formalism of quantum mechanics or general relativity.
       </p>
-      
-	  <p><em>
-      Physical reality may extend beyond what is locally observable, through degrees of freedom that remain structurally inaccessible.
+
+      <p><em>
+        In simple terms, OFID states that physical reality may extend beyond what can be locally observed,
+        due to the existence of structurally inaccessible degrees of freedom.
       </em></p>
-      
+
+      <p>
+        The problem addressed by OFID is whether the apparent limits of quantum coherence, information
+        accessibility, and causal structure reflect incomplete knowledge, or instead reveal a deeper
+        structural property of physical reality. OFID answers this by proposing that such limits arise
+        from intrinsic constraints on accessibility rather than from incomplete dynamics.
+      </p>
+
+      <div class="cta-box">
+        <a href="https://doi.org/10.5281/zenodo.18868538" target="_blank" class="cta-button primary">
+          View the paper
+        </a>
+        <a href="https://doi.org/10.5281/zenodo.18868538" target="_blank" class="cta-button secondary">
+          View on Zenodo
+        </a>
+      </div>
     </section>
 
     <section class="section-card">
-  <h2>Overview</h2>
+      <h2>Overview</h2>
 
-  <p>
-    OFID proposes that physical descriptions may be fundamentally constrained by the structure of
-    information accessibility, rather than by limitations of dynamical laws.
-  </p>
+      <p>
+        OFID proposes that physically real but structurally inaccessible degrees of freedom may impose
+        fundamental limits on the reconstructibility of quantum coherence and on the completeness of
+        local physical descriptions, without modifying the underlying dynamical laws.
+      </p>
 
-  <p>
-    In this framework, global evolution remains unitary, while local descriptions may encounter
-    intrinsic limits of reconstructibility due to degrees of inaccessibility.
-  </p>
+      <p>
+        Its objective is not to introduce a new physical theory, a collapse mechanism, or an interpretative
+        alteration of the quantum formalism. Instead, it makes explicit a structural distinction between
+        global ontological reality and the descriptions accessible from a given local regime.
+      </p>
 
-  <p>
-    These limits do not replace standard physical mechanisms such as environmental decoherence,
-    but may instead clarify the conditions under which such mechanisms appear operationally
-    complete from a local perspective.
-  </p>
+      <p>
+        In this framework, decoherence, indeterminacy, entanglement, causal horizons, and related forms
+        of irreversibility are interpreted as manifestations of structural limitations of accessibility
+        rather than as indicators of incomplete physical reality.
+      </p>
+    </section>
 
-  <p>
-    In this sense, OFID does not introduce new dynamical laws, but provides a structural
-    perspective in which the apparent completeness of physical descriptions may depend on
-    accessibility constraints.
-  </p>
+    <section class="section-card">
+      <h2>Core conceptual claim</h2>
 
-  <p>
-    Its experimentally testable extension is developed in <a href="ofid-g.html">OFID-G</a>.
-  </p>
+      <p>
+        The central ontological claim of OFID is that accessibility is not a criterion of existence.
+        What is observable from a given regime does not exhaust what is physically real.
+      </p>
 
-</section>
+      <p>
+        This dissociation between reality and accessibility is not introduced as a speculative addition,
+        but extracted from structures already present in contemporary physics: partial trace in quantum
+        mechanics, effective irreversibility in decoherence, entanglement-induced non-reconstructibility,
+        and causal boundaries such as black hole or cosmological horizons.
+      </p>
+
+      <p>
+        OFID therefore proposes a minimal ontology in which reality may remain globally coherent while
+        local descriptions are necessarily partial and regime-dependent.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Interpretive scope</h2>
+
+      <p>
+        Within OFID, quantum superposition is not understood as the coexistence of contradictory values,
+        but as an effective local description of a richer global state. Likewise, measurement does not
+        introduce a new fundamental dynamical process, but corresponds to a change in the structure of
+        accessibility.
+      </p>
+
+      <p>
+        The framework also provides a unified perspective on phenomena often treated separately, including
+        decoherence, entanglement, black holes, and informational boundaries, by analyzing them in terms
+        of the same underlying distinction between global reality and local descriptive access.
+      </p>
+
+      <p>
+        In this sense, OFID does not replace standard physical mechanisms such as environmental decoherence,
+        but clarifies the ontological conditions under which such mechanisms appear operationally complete
+        from a local point of view.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>From ontology to testability</h2>
+
+      <p>
+        Although OFID is primarily ontological, it is not intended to remain purely interpretative.
+        Its empirical relevance is addressed through the identification of a falsifiable criterion based
+        on the reconstructibility of quantum coherence.
+      </p>
+
+      <p>
+        This experimentally testable extension is developed in <a href="ofid-g.html">OFID-G</a>, which
+        formulates a regime-relative operational notion of local reconstructibility. The corresponding
+        experimental implementation is developed in the <a href="index.html">Experimental</a> page, and
+        its quantitative phenomenological extension in <a href="constraints.html">Constraints</a>.
+      </p>
+
+      <p>
+        OFID should therefore be understood not as a closed conceptual endpoint, but as the ontological
+        foundation of a program that progresses from structural clarification toward operational testing.
+      </p>
+    </section>
 
     <section class="section-card">
       <h2>Main preprint</h2>
 
       <div class="resource-box">
-        <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.18868538">10.5281/zenodo.18868538</a></p>
-        <p><span class="resource-label">Zenodo:</span> <a href="https://zenodo.org/record/18868538">View on Zenodo</a></p>
+        <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.18868538" target="_blank">10.5281/zenodo.18868538</a></p>
+        <p><span class="resource-label">Zenodo:</span> <a href="https://doi.org/10.5281/zenodo.18868538" target="_blank">View on Zenodo</a></p>
       </div>
     </section>
 
@@ -244,17 +413,17 @@
       <h4>Keywords</h4>
       <div class="keywords">
         <span>OFID</span>
-        <span>quantum foundations</span>
+        <span>ontological framework</span>
+        <span>imbricated degrees</span>
         <span>information accessibility</span>
+        <span>reconstructibility</span>
+        <span>quantum foundations</span>
         <span>decoherence</span>
-        <span>gravitational effects</span>
         <span>black holes</span>
-		<span>quantum gravity</span>
         <span>structural limits</span>
-        <span>information theory</span>
+        <span>quantum gravity</span>
       </div>
     </section>
   </main>
 </body>
-
 </html>
