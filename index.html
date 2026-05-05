@@ -5,18 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Testing Quantum Coherence Reconstructibility in Mesoscopic Systems</title>
-  <meta name="description" content="Experimental framework for testing whether quantum coherence can always be fully reconstructed from experimentally accessible information in mesoscopic systems, within the OFID-G framework." />
-  <meta name="keywords" content="quantum coherence, reconstructibility, mesoscopic systems, quantum decoherence experiments, optomechanics, matter-wave interferometry, OFID-G, OFID, covariance matrix, state reconstruction, quantum foundations" />
+
+  <!-- SEO -->
+  <meta name="description" content="Operational experimental framework for testing the reconstructibility of quantum coherence in mesoscopic systems through covariance-based state reconstruction, residual deviations, and controlled parameter scans." />
+  <meta name="keywords" content="quantum coherence, reconstructibility, mesoscopic systems, covariance matrix, state reconstruction, optomechanics, quantum decoherence experiments, OFID-G, quantum foundations" />
   <meta name="author" content="Alex Chenuaud" />
 
+  <!-- Open Graph (LinkedIn, Facebook, etc.) -->
   <meta property="og:title" content="Testing Quantum Coherence Reconstructibility in Mesoscopic Systems" />
-  <meta property="og:description" content="Experimental framework for testing possible limits to the reconstructibility of quantum coherence in mesoscopic systems within the OFID-G framework." />
+  <meta property="og:description" content="Operational experimental framework for testing the reconstructibility of quantum coherence in mesoscopic systems through covariance-based state reconstruction, residual deviations, and controlled parameter scans." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexsasfrance.github.io/OFID-framework/" />
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Testing Quantum Coherence Reconstructibility in Mesoscopic Systems" />
-  <meta name="twitter:description" content="Experimental framework probing whether quantum coherence can always be fully reconstructed from experimentally accessible information." />
+  <meta name="twitter:description" content="Operational experimental framework for testing the reconstructibility of quantum coherence in mesoscopic systems through covariance-based state reconstruction, residual deviations, and controlled parameter scans." />
+
+  <!-- Optional but recommended -->
+  <link rel="canonical" href="https://alexsasfrance.github.io/OFID-framework/" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
 
   <style>
     :root {
@@ -296,7 +305,7 @@
       </em></p>
 
       <p>
-        The problem addressed here is whether all observed deviations from quantum coherence can be fully explained by environmental decoherence, or whether a residual limitation of reconstructibility may persist under controlled conditions. This approach investigates this question by introducing an experimentally accessible observable that directly tests the agreement between reconstructed and predicted quantum states under standard dynamics.
+		The problem addressed here is whether all observed limitations to coherence reconstructibility can be fully explained by calibrated environmental decoherence, or whether a residual limitation may persist under controlled conditions. The experiment does not test coherence loss itself, but the completeness of its reconstruction from accessible information, by comparing reconstructed and predicted quantum states under standard dynamics.
 	  </p>
 
       <div class="cta-box">
@@ -331,9 +340,10 @@
       </p>
 
       <p>
-        The corresponding observable takes the form of a deviation between measured and predicted covariance
-        matrices. Under the null hypothesis of full reconstructibility, this deviation should remain statistically
-        compatible with zero under a monotonic scan of the effective gravitational parameter.
+        The corresponding observable is the deviation Δ between measured and predicted covariance matrices.
+		Under the null hypothesis of full reconstructibility, Δ should remain statistically compatible with zero
+		under a monotonic scan of the controlled parameter λ, or equivalently of the effective phenomenological
+		parameter Ξ.
       </p>
 
       <p>
@@ -361,8 +371,8 @@
 
       <p>
         In this perspective, the test does not seek a new decoherence law. It probes whether standard decoherence
-        modeling is operationally complete, or whether a residual limitation persists beyond the reach of
-        environmental explanation.
+		modeling is operationally complete, or whether a residual contribution δ<sub>res</sub> persists beyond the reach
+		of environmental explanation.
       </p>
     </section>
 
@@ -388,9 +398,15 @@
         parameter space or as a more threshold-like transition. In both cases, the essential point is that it
         remains operationally distinguishable from standard decoherence.
       </p>
+	  
+	  <p>
+		The phenomenological interpretation of such signatures, including residual floors, threshold-like
+		behavior, and null results, is developed in the <a href="constraints.html">Constraints framework</a>.
+	  </p>
+	  
     </section>
-
-    <section class="section-card">
+	      
+	<section class="section-card">
       <h2>Preprint</h2>
 
       <div class="resource-box">
