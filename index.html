@@ -18,7 +18,7 @@
   <meta property="og:url" content="https://alexsasfrance.github.io/OFID-framework/" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Testing Quantum Coherence Reconstructibility in Mesoscopic Systems" />
   <meta name="twitter:description" content="Operational experimental framework for testing the reconstructibility of quantum coherence in mesoscopic systems through covariance-based state reconstruction, residual deviations, and controlled parameter scans." />
 
@@ -272,6 +272,12 @@
       body { line-height: 1.66; }
     }
   </style>
+  <meta name="robots" content="index, follow" />
+  <meta property="og:image" content="https://alexsasfrance.github.io/OFID-framework/og-image.png" />
+  <meta name="twitter:image" content="https://alexsasfrance.github.io/OFID-framework/og-image.png" />
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "Testing Quantum Coherence Reconstructibility in Mesoscopic Systems", "name": "Testing Quantum Coherence Reconstructibility in Mesoscopic Systems", "author": {"@type": "Person", "name": "Alex Chenuaud", "sameAs": "https://orcid.org/0009-0002-8297-8063"}, "inLanguage": "en", "datePublished": "2026-04", "description": "An operational experimental framework testing whether quantum coherence remains fully reconstructible in mesoscopic systems, with composition-invariance and energetic signatures discriminating a structural residual from collapse models.", "identifier": "https://doi.org/10.5281/zenodo.19351945", "sameAs": "https://doi.org/10.5281/zenodo.19351945", "url": "https://alexsasfrance.github.io/OFID-framework/", "isPartOf": {"@type": "WebSite", "name": "OFID framework", "url": "https://alexsasfrance.github.io/OFID-framework/"}, "keywords": "quantum coherence, reconstructibility, mesoscopic systems, optomechanics, decoherence, collapse models, quantum foundations"}
+  </script>
 </head>
 <body>
   <nav class="navbar">
@@ -281,7 +287,6 @@
         <a href="overview.html">Overview</a>
         <a href="index.html" class="active">Experimental</a>
         <a href="ofid-g.html">OFID-G</a>
-        <a href="constraints.html">Constraints</a>
         <a href="ofid-framework.html">OFID</a>
       </div>
     </div>
@@ -401,9 +406,38 @@
 	  
 	  <p>
 		The phenomenological interpretation of such signatures, including residual floors, threshold-like
-		behavior, and null results, is developed in the <a href="constraints.html">Constraints framework</a>.
+		behavior, and null results, is developed within the paper itself.
 	  </p>
 	  
+    </section>
+
+    <section class="section-card">
+      <h2>Discriminating the origin of a residual</h2>
+
+      <p>
+        A residual deviation, on its own, does not reveal its origin. Two independent signatures separate the candidates.
+      </p>
+
+      <p>
+        <strong>Composition invariance.</strong> Environmental channels depend on the microscopic constitution of the system,
+        whereas a structural limit depends only on the macroscopic configuration. Repeating the scan with particles of different
+        composition therefore separates a configuration-dependent residual from a mundane environmental one: plotted against the
+        effective parameter Ξ, an environmental residual fails to collapse, while a configuration-dependent one falls on a single curve.
+      </p>
+
+      <p>
+        <strong>Energy budget.</strong> Objective-collapse models such as Diósi–Penrose and CSL modify the dynamics and inject energy,
+        producing anomalous heating and, for charged constituents, spontaneous radiation. A structural accessibility limit is unitary
+        at the complete level and injects no such energy. An accompanying heating or emission signal therefore points to a dynamical
+        mechanism, while its absence is compatible with a structural origin — an operational separation that the covariance
+        signature alone does not provide.
+      </p>
+
+      <p>
+        A minimal Gaussian model shows that such a residual can arise from incomplete access alone, distinct from a calibration
+        shortfall or a modified dynamics, and a transparent sensitivity forecast quantifies the bounds achievable on current
+        levitated-optomechanics platforms.
+      </p>
     </section>
 	      
 	<section class="section-card">
