@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alexsasfrance.github.io/OFID-framework/sitemap.xml
