@@ -7,21 +7,20 @@
   <title>Quantum Coherence Reconstructibility – Overview of the OFID Framework</title>
 
   <!-- SEO -->
-  <meta name="description" content="Structured overview of the OFID framework and its operational, experimental, and phenomenological extensions for testing possible limits to quantum coherence reconstructibility." />
-  <meta name="keywords" content="quantum coherence, reconstructibility, OFID, OFID-G, mesoscopic systems, decoherence, quantum foundations, optomechanics, phenomenological constraints" />
+  <meta name="description" content="Structured overview of the OFID framework and its operational and experimental extensions for testing possible limits to quantum coherence reconstructibility." />
+  <meta name="keywords" content="quantum coherence, reconstructibility, OFID, OFID-G, mesoscopic systems, decoherence, quantum foundations, optomechanics" />
   <meta name="author" content="Alex Chenuaud" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Quantum Coherence Reconstructibility – Overview of the OFID Framework" />
-  <meta property="og:description" content="Structured overview of OFID, OFID-G, the experimental framework, and phenomenological constraints on quantum coherence reconstructibility." />
+  <meta property="og:description" content="Structured overview of OFID, OFID-G, and the experimental test of quantum coherence reconstructibility." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexsasfrance.github.io/OFID-framework/overview.html" />
 
   <!-- (optionnel) -->
-  <!-- <meta property="og:image" content="https://alexsasfrance.github.io/OFID-framework/og-image.png" /> -->
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Quantum Coherence Reconstructibility – Overview of the OFID Framework" />
   <meta name="twitter:description" content="Structured overview of OFID and its experimental and phenomenological extensions." />
 
@@ -283,6 +282,15 @@
       body { line-height: 1.66; }
     }
   </style>
+  <meta name="robots" content="index, follow" />
+  <meta property="og:image" content="https://alexsasfrance.github.io/OFID-framework/og-image.png" />
+  <meta name="twitter:image" content="https://alexsasfrance.github.io/OFID-framework/og-image.png" />
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "WebSite", "name": "OFID framework", "url": "https://alexsasfrance.github.io/OFID-framework/", "author": {"@type": "Person", "name": "Alex Chenuaud", "sameAs": "https://orcid.org/0009-0002-8297-8063"}, "description": "OFID, OFID-G and the experimental test of quantum coherence reconstructibility in mesoscopic systems."}
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this framework introduce new physical dynamics?", "acceptedAnswer": {"@type": "Answer", "text": "No. The OFID and OFID-G frameworks do not modify the dynamical laws of quantum mechanics. They operate entirely within standard unitary evolution and focus instead on the structure of accessibility to quantum degrees of freedom."}}, {"@type": "Question", "name": "How does this differ from standard environmental decoherence?", "acceptedAnswer": {"@type": "Answer", "text": "Environmental decoherence describes the redistribution of coherence into external degrees of freedom. The present approach addresses whether reconstructibility itself may be subject to structural limitations, even after all known decoherence channels have been independently characterized and controlled."}}, {"@type": "Question", "name": "Does this imply a breakdown of unitarity?", "acceptedAnswer": {"@type": "Answer", "text": "No. Global unitarity is preserved. Any limitation considered here concerns local reconstructibility, not the underlying quantum evolution."}}, {"@type": "Question", "name": "What type of experimental signature is considered?", "acceptedAnswer": {"@type": "Answer", "text": "A residual, reproducible deviation after calibration of environmental decoherence, distinguished by two signatures: composition invariance, which separates a configuration-dependent residual from environmental channels, and the energy budget (anomalous heating or spontaneous emission), which separates a structural residual from collapse models such as Diosi-Penrose and CSL."}}, {"@type": "Question", "name": "What would falsify this approach?", "acceptedAnswer": {"@type": "Answer", "text": "The absence of any deviation from standard decoherence across all experimentally accessible regimes would progressively constrain the existence of such structural limitations, translating into upper bounds on residual effects or lower bounds on possible transition thresholds."}}]}
+  </script>
 </head>
 
 <body>
@@ -293,7 +301,6 @@
         <a href="overview.html" class="active">Overview</a>
         <a href="index.html">Experimental</a>
         <a href="ofid-g.html">OFID-G</a>
-        <a href="constraints.html">Constraints</a>
         <a href="ofid-framework.html">OFID</a>
       </div>
     </div>
@@ -335,19 +342,17 @@
       <h2>Conceptual architecture</h2>
 
       <p>
-        The OFID project is organized around four complementary levels.
+        The OFID project is organized around three complementary levels.
       </p>
 
       <ul>
         <li><strong>OFID</strong> introduces the conceptual and ontological framework.</li>
         <li><strong>OFID-G</strong> formulates a testable operational notion of non-reconstructibility.</li>
         <li><strong>Experimental</strong> proposes a concrete mesoscopic protocol based on state reconstruction.</li>
-        <li><strong>Constraints</strong> translates possible null results into quantitative bounds on residual effects.</li>
       </ul>
 
       <p>
-        Taken together, these texts define a coherent progression from conceptual structure to operational criterion,
-        from experimental observable to phenomenological constraint.
+        Taken together, these texts define a coherent progression from conceptual structure to operational criterion and concrete experimental test.
       </p>
 	  
 	  <p>
@@ -423,35 +428,16 @@
         Candidate platforms include levitated optomechanical systems, matter-wave interferometry, and
         related mesoscopic implementations where quantum state reconstruction is experimentally accessible.
       </p>
-    </section>
-
-    <section class="section-card">
-      <h2>Phenomenological constraints</h2>
 
       <p>
-        The phenomenological extension introduces a minimal framework for translating experimental outcomes
-        into quantitative constraints on possible residual limitations to reconstructibility.
-      </p>
-
-      <p>
-        Rather than introducing a specific dynamical model, it defines an operational residual quantity after
-        independent calibration of known decoherence channels and expresses it in terms of an effective scan
-        parameter built from experimentally controllable quantities.
-      </p>
-
-      <p>
-        Two generic classes of behavior are considered: a continuous residual contribution leading to an
-        effective irreducible floor, and a threshold-like behavior associated with the onset of a transition
-        beyond a critical parameter value.
-      </p>
-
-      <p>
-        Within this framework, null experimental results can be interpreted either as upper bounds on a
-        continuous residual amplitude or as lower bounds on a possible transition threshold.
+        The origin of any residual is further constrained by two signatures: composition invariance, which separates a
+        configuration-dependent residual from environmental channels, and the energy budget (anomalous heating or spontaneous
+        emission), which separates a structural, energy-conserving residual from collapse models such as Diósi–Penrose and CSL.
+        A transparent sensitivity forecast quantifies the bounds achievable on current levitated-optomechanics platforms.
       </p>
     </section>
 
-    <section class="section-card">
+<section class="section-card">
       <h2>Scope and interpretation</h2>
 
       <p>
@@ -482,9 +468,10 @@
 
       <h3>What type of experimental signature is considered?</h3>
       <p>
-       The framework focuses on residual, reproducible deviations in reconstructibility after calibration
-       of environmental decoherence. Two generic regimes are considered: a continuous residual contribution
-       and a threshold-like transition beyond a critical parameter range.
+       A residual, reproducible deviation after calibration of environmental decoherence, distinguished by two
+       signatures: composition invariance, which separates a configuration-dependent residual from environmental
+       channels, and the energy budget (anomalous heating or spontaneous emission), which separates a structural
+       residual from collapse models such as Diósi–Penrose and CSL.
       </p>
 
       <h3>What would falsify this approach?</h3>
@@ -503,7 +490,6 @@
         <p><span class="resource-label">OFID:</span> <a href="https://doi.org/10.5281/zenodo.18868538" target="_blank">10.5281/zenodo.18868538</a></p>
         <p><span class="resource-label">OFID-G:</span> <a href="https://doi.org/10.5281/zenodo.19094656" target="_blank">10.5281/zenodo.19094656</a></p>
         <p><span class="resource-label">Experimental:</span> <a href="https://doi.org/10.5281/zenodo.19351945" target="_blank">10.5281/zenodo.19351945</a></p>
-        <p><span class="resource-label">Constraints:</span> <a href="https://doi.org/10.5281/zenodo.19387852" target="_blank">10.5281/zenodo.19387852</a></p>
       </div>
     </section>
 
@@ -519,7 +505,6 @@
         <span>quantum foundations</span>
         <span>optomechanics</span>
         <span>matter-wave interferometry</span>
-        <span>phenomenological constraints</span>
         <span>quantum decoherence experiments</span>
       </div>
     </section>
