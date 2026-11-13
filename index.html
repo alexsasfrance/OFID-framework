@@ -7,20 +7,20 @@
   <title>Testing Quantum Coherence Reconstructibility in Mesoscopic Systems</title>
 
   <!-- SEO -->
-  <meta name="description" content="Operational experimental framework for testing the reconstructibility of quantum coherence in mesoscopic systems through covariance-based state reconstruction, residual deviations, and controlled parameter scans." />
-  <meta name="keywords" content="quantum coherence, reconstructibility, mesoscopic systems, covariance matrix, state reconstruction, optomechanics, quantum decoherence experiments, OFID-G, quantum foundations" />
+  <meta name="description" content="Operational test of whether calibrated environmental decoherence fully accounts for quantum coherence reconstructibility in levitated optomechanics and other mesoscopic systems." />
+  <meta name="keywords" content="quantum coherence, reconstructibility, mesoscopic systems, levitated optomechanics, covariance matrix, state reconstruction, decoherence, collapse models, equivalence principle, quantum foundations" />
   <meta name="author" content="Alex Chenuaud" />
 
   <!-- Open Graph (LinkedIn, Facebook, etc.) -->
   <meta property="og:title" content="Testing Quantum Coherence Reconstructibility in Mesoscopic Systems" />
-  <meta property="og:description" content="Operational experimental framework for testing the reconstructibility of quantum coherence in mesoscopic systems through covariance-based state reconstruction, residual deviations, and controlled parameter scans." />
+  <meta property="og:description" content="Operational test of whether calibrated environmental decoherence fully accounts for quantum coherence reconstructibility in levitated optomechanics and other mesoscopic systems." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexsasfrance.github.io/OFID-framework/" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Testing Quantum Coherence Reconstructibility in Mesoscopic Systems" />
-  <meta name="twitter:description" content="Operational experimental framework for testing the reconstructibility of quantum coherence in mesoscopic systems through covariance-based state reconstruction, residual deviations, and controlled parameter scans." />
+  <meta name="twitter:description" content="Operational test of whether calibrated environmental decoherence fully accounts for quantum coherence reconstructibility in levitated optomechanics and other mesoscopic systems." />
 
   <!-- Optional but recommended -->
   <link rel="canonical" href="https://alexsasfrance.github.io/OFID-framework/" />
@@ -271,12 +271,33 @@
       h2 { font-size: 1.4rem; }
       body { line-height: 1.66; }
     }
+    .byline {
+      margin: -14px 0 22px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    .byline a {
+      color: var(--link);
+    }
+
+    .status-note {
+      margin: 0 0 22px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-left: 4px solid #b7791f;
+      border-radius: 10px;
+      background: var(--soft);
+      font-size: 0.97rem;
+      line-height: 1.6;
+    }
   </style>
   <meta name="robots" content="index, follow" />
   <meta property="og:image" content="https://alexsasfrance.github.io/OFID-framework/og-image.png" />
   <meta name="twitter:image" content="https://alexsasfrance.github.io/OFID-framework/og-image.png" />
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "Testing Quantum Coherence Reconstructibility in Mesoscopic Systems", "name": "Testing Quantum Coherence Reconstructibility in Mesoscopic Systems", "author": {"@type": "Person", "name": "Alex Chenuaud", "sameAs": "https://orcid.org/0009-0002-8297-8063"}, "inLanguage": "en", "datePublished": "2026-04", "description": "An operational experimental framework testing whether quantum coherence remains fully reconstructible in mesoscopic systems, with composition-invariance and energetic signatures discriminating a structural residual from collapse models.", "identifier": "https://doi.org/10.5281/zenodo.19351945", "sameAs": "https://doi.org/10.5281/zenodo.19351945", "url": "https://alexsasfrance.github.io/OFID-framework/", "isPartOf": {"@type": "WebSite", "name": "OFID framework", "url": "https://alexsasfrance.github.io/OFID-framework/"}, "keywords": "quantum coherence, reconstructibility, mesoscopic systems, optomechanics, decoherence, collapse models, quantum foundations"}
+  {"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "Testing Quantum Coherence Reconstructibility in Mesoscopic Systems", "name": "Testing Quantum Coherence Reconstructibility in Mesoscopic Systems", "author": {"@type": "Person", "name": "Alex Chenuaud", "sameAs": "https://orcid.org/0009-0002-8297-8063"}, "inLanguage": "en", "datePublished": "2026-03-31", "dateModified": "2026-09-02", "version": "2 September 2026", "description": "An operational, dynamics-preserving protocol to test whether the limitations to quantum coherence reconstructibility observed in mesoscopic systems are fully captured by calibrated environmental decoherence.", "identifier": "https://doi.org/10.5281/zenodo.19351945", "sameAs": "https://doi.org/10.5281/zenodo.19351945", "url": "https://alexsasfrance.github.io/OFID-framework/", "isPartOf": {"@type": "WebSite", "name": "OFID framework", "url": "https://alexsasfrance.github.io/OFID-framework/"}, "keywords": "quantum coherence, reconstructibility, mesoscopic systems, levitated optomechanics, decoherence, collapse models, equivalence principle, quantum foundations"}
   </script>
 </head>
 <body>
@@ -296,12 +317,14 @@
     <section class="hero">
       <div class="top-rule"></div>
       <h1>Testing Quantum Coherence Reconstructibility in Mesoscopic Systems</h1>
-      <p class="subtitle">Experimental extension of the OFID-G framework</p>
+      <p class="subtitle">An operational test for levitated optomechanics and other mesoscopic platforms</p>
+      <p class="byline">Alex Chenuaud · Independent researcher, France · <a href="https://orcid.org/0009-0002-8297-8063" target="_blank" rel="noopener">ORCID 0009-0002-8297-8063</a><br>Preprint, version of 2 September 2026</p>
 
       <p>
-        This page presents a concrete experimental framework for testing whether quantum coherence
-        can always be fully reconstructed from experimentally accessible information in mesoscopic systems,
-        under controlled variations of an effective gravitational configuration.
+        This preprint proposes an operational, dynamics-preserving protocol to test whether the limitations
+        to quantum coherence reconstructibility observed in mesoscopic systems are fully captured by calibrated
+        environmental decoherence. A covariance-based deviation observable Δ is scanned against a controlled
+        parameter, with the environmental model calibrated on control axes orthogonal to the scan.
       </p>
 
       <p><em>
@@ -349,6 +372,11 @@
 		Under the null hypothesis of full reconstructibility, Δ should remain statistically compatible with zero
 		under a monotonic scan of the controlled parameter λ, or equivalently of the effective phenomenological
 		parameter Ξ.
+      </p>
+
+      <p>
+        The effective parameter Ξ combines mass, delocalization, interrogation time, and gravitational
+        configuration, and provides a unified coordinate across experimental regimes.
       </p>
 
       <p>
@@ -415,7 +443,8 @@
       <h2>Discriminating the origin of a residual</h2>
 
       <p>
-        A residual deviation, on its own, does not reveal its origin. Two independent signatures separate the candidates.
+        A residual deviation, on its own, does not reveal its origin. Prior equivalence-principle bounds
+        (MICROSCOPE) and three in-situ signatures act as successive filters on the admissible explanations.
       </p>
 
       <p>
@@ -427,16 +456,41 @@
 
       <p>
         <strong>Energy budget.</strong> Objective-collapse models such as Diósi–Penrose and CSL modify the dynamics and inject energy,
-        producing anomalous heating and, for charged constituents, spontaneous radiation. A structural accessibility limit is unitary
+        producing secular heating and, for charged constituents, spontaneous radiation. A structural accessibility limit is unitary
         at the complete level and injects no such energy. An accompanying heating or emission signal therefore points to a dynamical
-        mechanism, while its absence is compatible with a structural origin — an operational separation that the covariance
-        signature alone does not provide.
+        mechanism, while its absence is compatible with a structural origin.
       </p>
 
       <p>
-        A minimal Gaussian model shows that such a residual can arise from incomplete access alone, distinct from a calibration
-        shortfall or a modified dynamics, and a transparent sensitivity forecast quantifies the bounds achievable on current
-        levitated-optomechanics platforms.
+        <strong>Electromagnetic selectivity.</strong> A tunable electromagnetic parameter, varied at fixed configuration,
+        separates an electromagnetic channel from a universal, configuration-dependent residual.
+      </p>
+
+      <p>
+        An exactly solvable two-mode model shows that a reproducible, recalibration-robust residual can arise from
+        incomplete access alone, distinct from a calibration shortfall or a modified dynamics.
+      </p>
+
+      <p>
+        Two elements are accessible on current levitated-optomechanics platforms: exclusion bounds resolved by coupling
+        form, and, conditional on any detected anomaly, a diagnostic stage in which the same scan axes measure its exponents
+        and identify its origin. Detecting the residual itself at an order-unity reference amplitude would require extending
+        Ξ by some eleven orders of magnitude, a gap quantified by a transparent sensitivity forecast.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2>Outlook</h2>
+
+      <p>
+        Two coherence-sensitive discriminators, a configuration echo and hidden-sector-mediated two-system entanglement,
+        would, should a residual ever be detected, probe the unitarity of the mechanism itself.
+      </p>
+
+      <p>
+        Null results constrain residual reconstructibility. A reproducible parameter-dependent deviation would test whether
+        any remaining limitation reflects a modification of the dynamics, incomplete local access to the complete physical
+        state, or an equally universal, non-switchable exotic coupling.
       </p>
     </section>
 	      
@@ -444,6 +498,7 @@
       <h2>Preprint</h2>
 
       <div class="resource-box">
+        <p><span class="resource-label">Version:</span> 2 September 2026 · CC BY 4.0</p>
         <p><span class="resource-label">📄 DOI:</span> <a href="https://doi.org/10.5281/zenodo.19351945" target="_blank">10.5281/zenodo.19351945</a></p>
         <p><span class="resource-label">Zenodo:</span> <a href="https://doi.org/10.5281/zenodo.19351945" target="_blank">View on Zenodo</a></p>
       </div>
@@ -459,12 +514,14 @@
         <span>covariance matrix</span>
         <span>optomechanics</span>
         <span>matter-wave interferometry</span>
-        <span>OFID-G</span>
-        <span>OFID</span>
+        <span>levitated optomechanics</span>
+        <span>collapse models</span>
+        <span>equivalence principle</span>
         <span>quantum decoherence experiments</span>
         <span>quantum foundations</span>
       </div>
     </section>
   </main>
+  <script data-goatcounter="https://ofid.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
