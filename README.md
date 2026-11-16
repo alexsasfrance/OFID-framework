@@ -6,7 +6,7 @@ Alex Chenuaud, independent researcher, France · ORCID [0009-0002-8297-8063](htt
 
 ## Preprints
 
-Current versions on Zenodo are dated 2 September 2026 and distributed under CC BY 4.0.
+All preprints are on Zenodo under CC BY 4.0. The experimental paper's current version is dated 16 November 2026; the other texts are dated 2 September 2026.
 
 | Work | DOI |
 |---|---|
@@ -19,7 +19,7 @@ Current versions on Zenodo are dated 2 September 2026 and distributed under CC B
 
 The paper proposes an operational, dynamics-preserving protocol to test whether the limitations to quantum coherence reconstructibility observed in mesoscopic systems are fully captured by calibrated environmental decoherence.
 
-A covariance-based deviation observable Δ, comparing the statistically reconstructed state with the calibrated standard prediction, is scanned against a controlled parameter. Prior equivalence-principle bounds (MICROSCOPE) and three in-situ signatures (composition invariance, energy budget, electromagnetic selectivity) filter the admissible explanations for any residual. An exactly solvable two-mode model shows that such a residual can arise from incomplete access alone, and a transparent sensitivity forecast quantifies what current levitated-optomechanics platforms can bound.
+A covariance-based deviation observable Δ, comparing the statistically reconstructed state with the calibrated standard prediction, is scanned against a controlled parameter. Prior equivalence-principle bounds (MICROSCOPE) and three in-situ signatures (composition invariance, energy budget, electromagnetic selectivity) filter the admissible explanations for any residual. An exactly solvable two-mode model shows that such a residual can arise from incomplete access alone, and a sensitivity forecast quantifies what current levitated-optomechanics platforms can bound.
 
 ## Conceptual background
 
