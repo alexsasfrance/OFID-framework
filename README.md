@@ -6,7 +6,7 @@ Alex Chenuaud, independent researcher, France · ORCID [0009-0002-8297-8063](htt
 
 ## Preprints
 
-All preprints are on Zenodo under CC BY 4.0. The experimental paper's current version is dated 16 November 2026; the other texts are dated 2 September 2026.
+All preprints are on Zenodo under CC BY 4.0. The current versions of the experimental paper and of the OFID-G paper are dated 17 November 2026; the other texts are dated 2 September 2026.
 
 | Work | DOI |
 |---|---|
